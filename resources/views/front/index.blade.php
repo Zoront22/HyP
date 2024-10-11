@@ -19,7 +19,7 @@
                                 data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="/theme/images/main-slider/dummy.png" alt=""
-                                    data-lazyload="images/main-slider/slide1.jpg" data-bgposition="center center"
+                                    data-lazyload="/theme/images/main-slider/slide1.jpg" data-bgposition="center center"
                                     data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut"
                                     data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0"
                                     data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0"
@@ -118,7 +118,7 @@
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="/theme/images/main-slider/dummy.png" alt=""
-                                    data-lazyload="images/main-slider/slide2.jpg" data-bgposition="center center"
+                                    data-lazyload="/theme/images/main-slider/slide2.jpg" data-bgposition="center center"
                                     data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut"
                                     data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0"
                                     data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0"

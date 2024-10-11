@@ -3,7 +3,7 @@
 @section('content')
     <!-- Contact Form -->
     <div class="section-full content-inner contact-page-9 overlay-black-dark"
-        style="background-image: url(images/background/bg5.jpg); background-position: 30% 100%">
+        style="background-image: url(theme/images/background/bg5.jpg); background-position: 30% 100%">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 text-white">
