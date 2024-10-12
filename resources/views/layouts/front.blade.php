@@ -428,7 +428,7 @@
                     <div class="row">
                         <div class="col-md-3 col-5 col-xl-2 col-lg-2 col-sm-6 footer-col-4">
                             <div class="widget widget_services border-0">
-                                <h5 class="footer-title text-white">Company</h5>
+                                <h5 class="footer-title text-white">Compañia</h5>
                                 <ul>
                                     <li><a href="{{ url('/about') }}">About Us</a></li>
                                     {{-- <li><a href="/theme/blog-grid-2.html">Blog</a></li>
@@ -452,13 +452,13 @@
                         </div> --}}
                         <div class="col-md-6 col-xl-4 col-lg-3 col-sm-6 footer-col-4">
                             <div class="widget widget_getintuch">
-                                <h5 class="footer-title text-white">Contact us</h5>
+                                <h5 class="footer-title text-white">Contactanos</h5>
                                 <ul>
-                                    <li><i class="ti-location-pin"></i><strong>address</strong> Blvd. Fundadores 3751
+                                    <li><i class="ti-location-pin"></i><strong>Direccion</strong> Blvd. Fundadores 3751
                                         Bodega 5 Col. Valle de las Flores C.P. 25150, Saltillo Coahuila, Mexico </li>
-                                    <li><i class="ti-mobile"></i><strong>phone</strong><a
+                                    <li><i class="ti-mobile"></i><strong>Telefono</strong><a
                                             href="/theme/tel:+4733378901">8446797552 </a></li>
-                                    <li><i class="ti-email"></i><strong>email</strong><a
+                                    <li><i class="ti-email"></i><strong>E-mail</strong><a
                                             href="/theme/mailto:someone@example.com">heber.gaona@hypsolution.com.mx</a>
                                     </li>
                                 </ul>
@@ -483,19 +483,22 @@
                                         </div>
                                     </form>
                                 </div> --}}
-                            <h5 class="footer-title text-white">Subscribe To Our Newsletter</h5>
+                            <h5 class="footer-title text-white">Sigue Nuestras Redes</h5>
                             <ul class="list-inline m-a0">
                                 <li><a href="https://www.facebook.com/hypsolutionfacilitators/"
                                         class="site-button facebook circle "><i class="fab fa-facebook-f"></i></a>
                                 </li>
-                                <li><a href="/theme/javascript:void(0);" class="site-button google-plus circle "><i
+                                <li><a href="https://www.linkedin.com/in/rodrigo-cl-5100702b2/?originalSubdomain=mx"
+                                        class="site-button linkedin circle "><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                {{-- <li><a href="/theme/javascript:void(0);" class="site-button google-plus circle "><i
                                             class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="/theme/javascript:void(0);" class="site-button linkedin circle "><i
                                             class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="/theme/javascript:void(0);" class="site-button instagram circle "><i
                                             class="fab fa-instagram"></i></a></li>
                                 <li><a href="/theme/javascript:void(0);" class="site-button twitter circle "><i
-                                            class="fab fa-twitter"></i></a></li>
+                                            class="fab fa-twitter"></i></a></li> --}}
                             </ul>
                         </div>
                     </div>
