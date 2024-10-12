@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\HyPMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +30,9 @@ Route::get('/contact', function () {
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/enviado', function () {
+    Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
+
+    return 'enviado!!';
+});
