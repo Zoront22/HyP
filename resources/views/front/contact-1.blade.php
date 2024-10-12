@@ -3,7 +3,7 @@
 @section('content')
     <!-- Contact Form -->
     <div class="section-full content-inner contact-page-9 overlay-black-dark"
-        style="background-image: url(theme/images/background/bg5.jpg); background-position: 30% 100%">
+        style="background-image: url(theme/images/new/others/background-06.png); background-position: 30% 100%">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 text-white">
@@ -13,7 +13,7 @@
                                 <div class="icon-content">
                                     <h5 class="dlab-tilte">
                                         <span class="icon-sm text-primary"><i class="ti-location-pin"></i></span>
-                                        Company Address
+                                        Horarios y Oficina
                                     </h5>
                                     <p>Blvd. Fundadores 3751 Bodega 5 Col. Valle de las Flores C.P. 25150 / Saltillo
                                         Coahuila / Mexico</p>
@@ -28,7 +28,7 @@
                                 <div class="icon-content">
                                     <h5 class="dlab-tilte">
                                         <span class="icon-sm text-primary"><i class="ti-email"></i></span>
-                                        E-mail
+                                        Contacto
                                     </h5>
                                     <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">HYP Solutuion
                                             Facilitators
@@ -46,7 +46,7 @@
                                 <div class="icon-content">
                                     <h5 class="dlab-tilte">
                                         <span class="icon-sm text-primary"><i class="ti-mobile"></i></span>
-                                        Phone Numbers
+                                        Numero Telefonico
                                     </h5>
                                     <p class="m-b0"><a href="tel:+4733378901" class="text-white">Tel. 8446797552</a></p>
                                     {{-- <p class="m-b0"><a href="tel:+4733378901" class="text-white">+00 1234 5678 90</a></p> --}}

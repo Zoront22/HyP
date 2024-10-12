@@ -78,9 +78,7 @@
                                     style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
                                     Somos una empresa especializada en equipo de protección personal y artículos de
                                     seguridad industrial, distribuimos
-                                    las mejores marcas del mercado, lo que nos ha permitido lograr importantes sinergias con
-                                    nuestros clientes y sus
-                                    colaboradores.
+                                    las mejores marcas del mercado.
                                 </div>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink"
@@ -178,10 +176,7 @@
                                     style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
                                     A lo largo de más de 30 años hemos obtenido la experiencia que nos permite brindar
                                     soluciones objetivas y
-                                    confiables para cada uno de los proyectos que nos confieren. Estamos orgullosos de
-                                    nuestro trabajo, somos parte
-                                    fundamental dentro de los procesos operativos y de prevención de riesgo de las
-                                    industrias que proveemos.
+                                    confiables para cada uno de los proyectos que nos confieren.
                                 </div>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"
@@ -530,18 +525,20 @@
         <div class="section-full bg-white content-inner">
             <div class="container">
                 <div class="section-head text-black text-center">
-                    <h2 class="title text-capitalize">Meet The Team</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                        standard dummy text ever since the been when an unknown printer.</p>
+                    <h2 class="title text-capitalize">Unete a nuestro equipo</h2>
+                    <p>𝗛&𝗣 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗙𝗮𝗰𝗶𝗹𝗶𝘁𝗮𝘁𝗼𝗿𝘀 busca personal.
+                        ¡Únete a nuestro equipo de 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿𝗲𝘀 𝘆 𝗦𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗼𝗿𝗲𝘀 𝗱𝗲 𝗖𝗮𝗹𝗶𝗱𝗮𝗱 y
+                        marca la diferencia en la excelencia! Si buscas un desafío emocionante y una oportunidad para
+                        𝗰𝗿𝗲𝗰𝗲𝗿 𝗽𝗿𝗼𝗳𝗲𝘀𝗶𝗼𝗻𝗮𝗹𝗺𝗲𝗻𝘁𝗲, ¡𝗲𝘀𝘁𝗼 𝗲𝘀 𝗽𝗮𝗿𝗮 𝘁𝗶! </p>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
-                                <a href="/theme/team-1.html">
-                                    <img alt="" src="/theme/images/our-team/pic1.jpg">
+                                <a href="">
+                                    <img alt="" src="/theme/images/new/others/sprite-08.png">
                                 </a>
-                                <div class="dlab-info-has">
+                                {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -552,9 +549,9 @@
                                         <li><a class="site-button fab fa-pinterest-p"
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="/theme/team-1.html">Nashid Martines</a></h4>
+                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -562,10 +559,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
-                                <a href="/theme/team-1.html">
-                                    <img alt="" src="/theme/images/our-team/pic2.jpg">
+                                <a href="">
+                                    <img alt="" src="/theme/images/new/others/sprite-04.png">
                                 </a>
-                                <div class="dlab-info-has">
+                                {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -576,9 +573,9 @@
                                         <li><a class="site-button fab fa-pinterest-p"
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="/theme/team-1.html">Konne Backfield</a></h4>
+                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -586,10 +583,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
-                                <a href="/theme/team-1.html">
-                                    <img alt="" src="/theme/images/our-team/pic3.jpg">
+                                <a href="">
+                                    <img alt="" src="/theme/images/new/others/sprite-06.png">
                                 </a>
-                                <div class="dlab-info-has">
+                                {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -600,9 +597,9 @@
                                         <li><a class="site-button fab fa-pinterest-p"
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="/theme/team-1.html">Hackson Willingham</a></h4>
+                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -610,10 +607,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
-                                <a href="/theme/team-1.html">
-                                    <img alt="" src="/theme/images/our-team/pic4.jpg">
+                                <a href="">
+                                    <img alt="" src="/theme/images/new/others/sprite-07.png">
                                 </a>
-                                <div class="dlab-info-has">
+                                {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -624,9 +621,9 @@
                                         <li><a class="site-button fab fa-pinterest-p"
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="/theme/team-1.html">Konne Backfield</a></h4>
+                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -639,9 +636,10 @@
         <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
             <div class="container">
                 <div class="section-head text-black text-center">
-                    <h2 class="title">Testimonials</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                        standard dummy text ever since the been when an unknown printer.</p>
+                    <h2 class="title">Comentarios</h2>
+                    <p>"En H&P, estamos comprometidos con la integración de políticas de sustentabilidad social, ecológica y
+                        económica, creando un impacto positivo en tres dimensiones clave para la comunidad. Juntos avanzamos
+                        hacia un futuro más sostenible."</p>
                 </div>
                 <div
                     class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none">

@@ -3,7 +3,7 @@
 @section('content')
     <!-- inner page banner -->
     <div class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
-        style="background-image:url(/theme/images/banner/bnr3.jpg);">
+        style="background-image:url(/theme/images/new/others/background-05.png);">
         <div class="container">
             <div class="dlab-bnr-inr-entry align-m text-center">
                 <h1 class="text-white">Sobre nosotros</h1>
@@ -61,7 +61,7 @@
         <!-- About Services info END -->
         <!-- Counter -->
         <div class="section-full content-inner overlay-black-dark bg-img-fix"
-            style="background-image:url(/theme/images/background/bg1.jpg);">
+            style="background-image:url(/theme/images/new/others/background-04.png);">
             <div class="container">
                 <div class="section-content text-center text-white">
                     <div class="row">

@@ -54,7 +54,8 @@
                     <div class="container clearfix">
                         <!-- website logo -->
                         <div class="logo-header mostion logo-dark">
-                            <a href="{{ url('/') }}"><img src="/theme/images/logo-2.png" alt=""></a>
+                            <a href="{{ url('/') }}"><img src="/theme/images/new/logo/logo-03.png"
+                                    alt=""></a>
                         </div>
                         <!-- nav toggle button -->
                         <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
@@ -397,13 +398,15 @@
                             <div class="dlab-social-icon ind-social">
                                 <ul>
                                     <li><a class="site-button-link facebook fab fa-facebook-f"
-                                            href="/theme/javascript:void(0);"></a></li>
-                                    <li><a class="site-button-link twitter fab fa-twitter"
-                                            href="/theme/javascript:void(0);"></a></li>
+                                            href="https://www.facebook.com/hypsolutionfacilitators/"></a>
+                                    </li>
                                     <li><a class="site-button-link linkedin fab fa-linkedin-in"
+                                            href="https://www.linkedin.com/in/rodrigo-cl-5100702b2/?originalSubdomain=mx"></a>
+                                    </li>
+                                    {{-- <li><a class="site-button-link twitter fab fa-twitter"
                                             href="/theme/javascript:void(0);"></a></li>
                                     <li><a class="site-button-link instagram fab fa-instagram"
-                                            href="/theme/javascript:void(0);"></a></li>
+                                            href="/theme/javascript:void(0);"></a></li> --}}
                                 </ul>
                                 <p>2022 Industry</p>
                             </div>
