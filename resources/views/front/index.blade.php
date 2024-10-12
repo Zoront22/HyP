@@ -465,7 +465,9 @@
                         cualquier entorno de trabajo.
                         Nuestro compromiso es proporcionar productos de la más alta calidad que cumplan
                         con los estándares internacionales de seguridad y rendimiento.</p><br>
-                    <h5>Revisa nuestro catalogo completo <a href="">dando click aqui.</a></h5>
+                    <h5>Revisa nuestro catalogo completo <a
+                            href="/theme/archives/Guía-rápida-ECO-JYRSA-2024-Oficial-1.1.pdf" target="_blank">dando click
+                            aqui.</a></h5>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
