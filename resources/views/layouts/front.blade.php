@@ -14,11 +14,11 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="/theme/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="/theme/images/favicon.png">
+    <link rel="icon" href="/theme/images/new/icon/hyp-logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="/theme/images/new/icon/hyp-logo.ico">
 
     <!-- PAGE TITLE HERE -->
-    <title>Industry - Factory & Industrial HTML Template</title>
+    <title>H&P Solution Facilitators</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,7 +82,8 @@
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                             <div class="logo-header d-md-block d-lg-none">
-                                <a href="{{ url('/') }}"><img src="/theme/images/logo-2.png" alt=""></a>
+                                <a href="{{ url('/') }}"><img src="/theme/images/new/logo/hyp-logo-oscuro.png"
+                                        alt=""></a>
                             </div>
                             <ul class="nav navbar-nav">
                                 <li class="active has-mega-menu homedemo">
@@ -453,12 +454,13 @@
                             <div class="widget widget_getintuch">
                                 <h5 class="footer-title text-white">Contact us</h5>
                                 <ul>
-                                    <li><i class="ti-location-pin"></i><strong>address</strong> demo address #8901
-                                        Marmora Road Chi Minh City, Vietnam </li>
+                                    <li><i class="ti-location-pin"></i><strong>address</strong> Blvd. Fundadores 3751
+                                        Bodega 5 Col. Valle de las Flores C.P. 25150, Saltillo Coahuila, Mexico </li>
                                     <li><i class="ti-mobile"></i><strong>phone</strong><a
-                                            href="/theme/tel:+4733378901">0800-123456 </a> (24/7 Support Line)</li>
+                                            href="/theme/tel:+4733378901">8446797552 </a></li>
                                     <li><i class="ti-email"></i><strong>email</strong><a
-                                            href="/theme/mailto:someone@example.com">info@example.com</a></li>
+                                            href="/theme/mailto:someone@example.com">heber.gaona@hypsolution.com.mx</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -483,8 +485,9 @@
                                 </div> --}}
                             <h5 class="footer-title text-white">Subscribe To Our Newsletter</h5>
                             <ul class="list-inline m-a0">
-                                <li><a href="/theme/javascript:void(0);" class="site-button facebook circle "><i
-                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.facebook.com/hypsolutionfacilitators/"
+                                        class="site-button facebook circle "><i class="fab fa-facebook-f"></i></a>
+                                </li>
                                 <li><a href="/theme/javascript:void(0);" class="site-button google-plus circle "><i
                                             class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="/theme/javascript:void(0);" class="site-button linkedin circle "><i

@@ -19,7 +19,7 @@
                                 data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="/theme/images/main-slider/dummy.png" alt=""
-                                    data-lazyload="/theme/images/main-slider/slide1.jpg" data-bgposition="center center"
+                                    data-lazyload="/theme/images/new/others/background1.png" data-bgposition="center center"
                                     data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut"
                                     data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0"
                                     data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0"
@@ -62,7 +62,7 @@
                                     data-paddingright="[10,10,0,0]" data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
                                     style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">
-                                    Fast and Reliable <br>Electrical services
+                                    H&P <br> Solution Facilitators
                                 </div>
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption" id="slide-100-layer-4"
@@ -76,12 +76,15 @@
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
                                     style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s.
+                                    Somos una empresa especializada en equipo de protección personal y artículos de
+                                    seguridad industrial, distribuimos
+                                    las mejores marcas del mercado, lo que nos ha permitido lograr importantes sinergias con
+                                    nuestros clientes y sus
+                                    colaboradores.
                                 </div>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink"
-                                    href="/theme/about-1.html" target="_blank" id="slide-100-layer-5"
+                                    href="{{ url('/about') }}" target="_blank" id="slide-100-layer-5"
                                     data-x="['center','center','center','center']"
                                     data-hoffset="['-510','-335','-100','-80']"
                                     data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"
@@ -91,8 +94,8 @@
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[15,15,15,10]"
                                     data-paddingright="[30,30,30,20]" data-paddingbottom="[15,15,15,10]"
                                     data-paddingleft="[30,30,30,20]"
-                                    style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
-                                    About Us
+                                    style="z-index: 8;letter-spacing: 1px; white-space: nowrap; font-size: 10px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
+                                    SOBRE NOSOTROS
                                 </a>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"
@@ -106,8 +109,8 @@
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[15,15,15,10]"
                                     data-paddingright="[30,30,30,20]" data-paddingbottom="[15,15,15,10]"
                                     data-paddingleft="[30,30,30,20]"
-                                    style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
-                                    Our Services
+                                    style="z-index: 8;letter-spacing: 1px; white-space: nowrap; font-size: 10px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
+                                    CONTACTANOS
                                 </a>
                             </li>
                             <li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default"
@@ -118,11 +121,12 @@
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="/theme/images/main-slider/dummy.png" alt=""
-                                    data-lazyload="/theme/images/main-slider/slide2.jpg" data-bgposition="center center"
-                                    data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut"
-                                    data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0"
-                                    data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0"
-                                    data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                                    data-lazyload="/theme/images/new/others/background2.png"
+                                    data-bgposition="center center" data-kenburns="on" data-duration="4000"
+                                    data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100"
+                                    data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
+                                    data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg"
+                                    data-no-retina>
                                 <!-- LAYER NR. 1 -->
                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer"
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -158,7 +162,7 @@
                                     data-paddingright="[10,10,0,0]" data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
                                     style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif;">
-                                    Fast and Reliable <br>Electrical services
+                                    Sus Expertos <br>En Seguridad
                                 </div>
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption" id="slide-200-layer-4"
@@ -172,12 +176,16 @@
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
                                     style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s.
+                                    A lo largo de más de 30 años hemos obtenido la experiencia que nos permite brindar
+                                    soluciones objetivas y
+                                    confiables para cada uno de los proyectos que nos confieren. Estamos orgullosos de
+                                    nuestro trabajo, somos parte
+                                    fundamental dentro de los procesos operativos y de prevención de riesgo de las
+                                    industrias que proveemos.
                                 </div>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"
-                                    href="/theme/about-1.html" target="_blank" id="slide-200-layer-5"
+                                    href="{{ url('/about') }}" target="_blank" id="slide-200-layer-5"
                                     data-x="['center','center','center','center']"
                                     data-hoffset="['-510','-335','-100','-80']"
                                     data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"
@@ -187,12 +195,12 @@
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[15,15,15,10]"
                                     data-paddingright="[30,30,30,20]" data-paddingbottom="[15,15,15,10]"
                                     data-paddingleft="[30,30,30,20]"
-                                    style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
-                                    About Us
+                                    style="z-index: 8;letter-spacing: 1px; white-space: nowrap; font-size: 10px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
+                                    SOBRE NOSOTROS
                                 </a>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"
-                                    href="/theme/services-details.html" target="_blank" id="slide-200-layer-6"
+                                    href="{{ url('/contact') }}" target="_blank" id="slide-200-layer-6"
                                     data-x="['center','center','center','center']"
                                     data-hoffset="['-340','-160','70','70']"
                                     data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"
@@ -202,8 +210,8 @@
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[15,15,15,10]"
                                     data-paddingright="[30,30,30,20]" data-paddingbottom="[15,15,15,10]"
                                     data-paddingleft="[30,30,30,20]"
-                                    style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
-                                    Our Services
+                                    style="z-index: 8;letter-spacing: 1px; white-space: nowrap; font-size: 10px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;">
+                                    CONTACTANOS
                                 </a>
                             </li>
                         </ul>
@@ -222,13 +230,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 text-white">
-                        <h2 class="title">Amazing things happen to your business </h2>
-                        <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h3 class="title">ESPACIOS ORGANIZADOS Y
+                            RESULTADOS NOTABLES </h3>
+                        {{-- <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> --}}
                     </div>
                     <div class="col-lg-3 d-flex">
-                        <a href="/theme/about-2.html"
-                            class="site-button white align-self-center outline ms-auto radius-xl outline-2 btnhover16 btnhover16">MARKET
-                            SECTORS </a>
+                        <a href="#catalogo"
+                            class="site-button white align-self-center outline ms-auto radius-xl outline-2 btnhover16 btnhover16">¡Visita
+                            nuestro catalogo!</a>
                     </div>
                 </div>
             </div>
@@ -239,34 +248,34 @@
             <div class="container">
                 <div class="on-show-slider ">
                     <div id="sync2" class="owl-carousel owl-theme owl-none owl-dots-none project-list">
-                        <div class="item">
+                        {{-- <div class="item">
                             <div class="project-owbx">
                                 <i class="flaticon-robot-arm"></i>
                                 <h4 class="title">Mechanical Works</h4>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="item">
                             <div class="project-owbx">
                                 <i class="flaticon-factory-1"></i>
-                                <h4 class="title">Power & Energy</h4>
+                                <h4 class="title">Mecánica</h4>
                             </div>
                         </div>
                         <div class="item">
                             <div class="project-owbx active">
                                 <i class="flaticon-fuel-station"></i>
-                                <h4 class="title">Petroleum Refinery</h4>
+                                <h4 class="title">Paileria</h4>
                             </div>
                         </div>
                         <div class="item">
                             <div class="project-owbx">
                                 <i class="flaticon-engineer-1"></i>
-                                <h4 class="title">Oil & Gas Industry </h4>
+                                <h4 class="title">Servicios electromecánicos </h4>
                             </div>
                         </div>
                         <div class="item">
                             <div class="project-owbx">
                                 <i class="flaticon-conveyor-1"></i>
-                                <h4 class="title">Automative Manufacturing</h4>
+                                <h4 class="title">Servicios industriales</h4>
                             </div>
                         </div>
                     </div>
@@ -276,42 +285,46 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story">
-                                        <span>OUR STORY</span>
-                                        <h2 class="title">We are Industrial <br>factory <span
-                                                class="text-primary">solutions</span></h2>
-                                        <h4 class="title">We are committed to provide safe industrial solutions to many
-                                            factories.</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem
-                                            Ipsum has been the Factory's standard dummy text ever since the 1500s, when an
-                                            unknown printer took a galley of type and scrambled it to make a type specimen
-                                            book.Lorem Ipsum is simply dummy text of the printing and typesetting Factory.
+                                        {{-- <span>OUR STORY</span> --}}
+                                        <h2 class="title">Mecánica <br>H&P <span class="text-primary">solutions
+                                                faciliators</span></h2>
+                                        <h4 class="title">Corte Laser, Reparaciones
+                                            mecánicas e hidráulicas.</h4>
+                                        <p>Ofrecemos servicios especializados en Corte Láser, Reparaciones Mecánicas e
+                                            Hidráulicas, garantizando precisión y eficiencia en cada proyecto. Nuestro
+                                            equipo está comprometido en brindar soluciones personalizadas para satisfacer
+                                            las necesidades técnicas de nuestros clientes, utilizando tecnología de
+                                            vanguardia y experiencia comprobada en la industria.
                                         </p>
-                                        <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a>
+                                        {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/about/pic6.jpg" class="radius-sm" alt="">
+                                    <img src="/theme/images/new/others/srv-mecanica.png" class="radius-sm"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/about/pic7.jpg" class="radius-sm" alt="">
+                                    <img src="/theme/images/new/others/srv-paileria.png" class="radius-sm"
+                                        alt="">
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story content-bx1">
-                                        <span>OUR STORY</span>
-                                        <h2 class="title">Trusted Factory <br>Solutions <span class="text-primary">since
-                                                1955</span></h2>
-                                        <h4 class="title">We are committed to provide safe industrial solutions to many
-                                            factories.</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem
-                                            Ipsum has been the Factory's standard dummy text ever since the 1500s, when an
-                                            unknown printer took a galley of type and scrambled it to make a type specimen
-                                            book.Lorem Ipsum is simply dummy text of the printing and typesetting Factory.
+                                        {{-- <span>OUR STORY</span> --}}
+                                        <h2 class="title">Pailería <br>H&P <span class="text-primary">solutions
+                                                faciliators</span></h2>
+                                        <h4 class="title">Fabricación, reparación e instalación de
+                                            Racks.</h4>
+                                        <p>Ofrecemos servicios de fabricación, reparación e instalación de Racks, así como
+                                            cualquier tipo de trabajo de pailería. Nos especializamos en estructuras
+                                            metálicas de alta calidad, garantizando durabilidad y un acabado profesional.
+                                            Nuestro equipo está dedicado a ofrecer soluciones personalizadas y eficaces para
+                                            cumplir con los más altos estándares en cada proyecto.
                                         </p>
-                                        <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a>
+                                        {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -320,53 +333,59 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story">
-                                        <span>OUR STORY</span>
-                                        <h2 class="title">We Help You to Turn<br> Vision Into <span class="text-primary">
-                                                Reality</span></h2>
-                                        <h4 class="title">We are committed to provide safe industrial solutions to many
-                                            factories.</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem
-                                            Ipsum has been the Factory's standard dummy text ever since the 1500s, when an
-                                            unknown printer took a galley of type and scrambled it to make a type specimen
-                                            book.Lorem Ipsum is simply dummy text of the printing and typesetting Factory.
+                                        {{-- <span>OUR STORY</span> --}}
+                                        <h2 class="title">Servicios industriales <br>H&P <span
+                                                class="text-primary">solutions
+                                                faciliators</span></h2>
+                                        <h4 class="title">Trabajos de Soldadura, trabajos de alta especialidad.
+                                        </h4>
+                                        <p>Ofrecemos servicios industriales de soldadura y trabajos de alta especialidad,
+                                            enfocados en proyectos que requieren precisión y experiencia técnica. Contamos
+                                            con un equipo altamente capacitado y herramientas de última generación para
+                                            garantizar soluciones robustas y eficientes en entornos industriales, cumpliendo
+                                            con los estándares más exigentes de calidad y seguridad.
                                         </p>
-                                        <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a>
+                                        {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/about/pic8.jpg" class="radius-sm" alt="">
+                                    <img src="/theme/images/new/others/srv-industriales.png" class="radius-sm"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/about/pic9.jpg" class="radius-sm" alt="">
+                                    <img src="/theme/images/new/others/srv-mecanicos.png" class="radius-sm"
+                                        alt="">
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story content-bx1">
-                                        <span>OUR STORY</span>
-                                        <h2 class="title">Your Trusted Building <br>and <span
-                                                class="text-primary">Restorations </span></h2>
-                                        <h4 class="title">We are committed to provide safe industrial solutions to many
-                                            factories.</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem
-                                            Ipsum has been the Factory's standard dummy text ever since the 1500s, when an
-                                            unknown printer took a galley of type and scrambled it to make a type specimen
-                                            book.Lorem Ipsum is simply dummy text of the printing and typesetting Factory.
+                                        {{-- <span>OUR STORY</span> --}}
+                                        <h2 class="title">Servicios electromecánicos <br>H&P <span
+                                                class="text-primary">solutions
+                                                faciliators</span></h2>
+                                        <h4 class="title">Servicios en el area de electromecanica</h4>
+                                        <p>Ofrecemos servicios mecánicos industriales especializados, brindando soluciones
+                                            eficientes para mantenimiento, reparación y optimización de maquinaria. Nuestro
+                                            equipo altamente capacitado utiliza tecnología avanzada para asegurar la
+                                            fiabilidad y el rendimiento de los equipos en entornos industriales,
+                                            garantizando un servicio de calidad y adaptado a las necesidades específicas de
+                                            cada cliente.
                                         </p>
-                                        <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a>
+                                        {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        {{-- <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story">
                                         <span>OUR STORY</span>
-                                        <h2 class="title">We Help You to Turn<br> Vision Into <span class="text-primary">
-                                                Reality</span></h2>
+                                        <h2 class="title">We Help You to Turn<br>H&P <span class="text-primary">solutions
+                                                faciliators</span></h2>
                                         <h4 class="title">We are committed to provide safe industrial solutions to many
                                             factories.</h4>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem
@@ -381,7 +400,7 @@
                                     <img src="/theme/images/about/pic10.jpg" class="radius-sm" alt="">
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 
@@ -389,7 +408,7 @@
         </div>
         <!-- About Us End -->
         <!-- Services -->
-        <div class="section-full content-inner bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+        {{-- <div class="section-full content-inner bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title">Our Services</h2>
@@ -439,16 +458,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Services End -->
         <!-- Latest Projects -->
         <div class="section-full content-inner-2 bg-img-fix overlay-black-dark wow fadeIn" data-wow-duration="2s"
-            data-wow-delay="0.8s" style="background-image: url(images/background/cs.jpg);">
+            data-wow-delay="0.8s" style="background-image: url(/theme/images/new/others/background3.png);">
             <div class="container">
                 <div class="section-head text-white text-center">
-                    <h2 class="title">Our Project</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                        standard dummy text ever since the been when an unknown printer.</p>
+                    <h2 class="title" id="catalogo">Catálogo</h2>
+                    <p>Descubre nuestro extenso catálogo de productos diseñados para garantizar la seguridad y eficiencia en
+                        cualquier entorno de trabajo.
+                        Nuestro compromiso es proporcionar productos de la más alta calidad que cumplan
+                        con los estándares internacionales de seguridad y rendimiento.</p><br>
+                    <h5>Revisa nuestro catalogo completo <a href="">dando click aqui.</a></h5>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
@@ -458,11 +480,10 @@
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1  dlab-img-effect zoom">
                                         <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/our-work/steelplant/pic10.jpg" alt=""></a>
+                                                src="/theme/images/new/catalog/catalogo0.png" alt=""></a>
                                     </div>
                                     <div class="dlab-info">
-                                        <h5 class="dlab-title"><a href="/theme/portfolio-details.html">Agricultural
-                                                Engineering</a></h5>
+                                        <h5 class="dlab-title">Chalecos</h5>
                                     </div>
                                 </div>
                             </div>
@@ -470,11 +491,10 @@
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1  dlab-img-effect zoom">
                                         <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/our-work/steelplant/pic9.jpg" alt=""></a>
+                                                src="/theme/images/new/catalog/catalogo01.png" alt=""></a>
                                     </div>
                                     <div class="dlab-info">
-                                        <h5 class="dlab-title"><a href="/theme/portfolio-details.html">Rocky Forge
-                                                Refinary</a></h5>
+                                        <h5 class="dlab-title">Soportes de Espalda</h5>
                                     </div>
                                 </div>
                             </div>
@@ -482,11 +502,10 @@
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
                                         <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/our-work/steelplant/pic8.jpg" alt=""></a>
+                                                src="/theme/images/new/catalog/catalogo02.png" alt=""></a>
                                     </div>
                                     <div class="dlab-info">
-                                        <h5 class="dlab-title"><a href="/theme/portfolio-details.html">Power and
-                                                Energy</a></h5>
+                                        <h5 class="dlab-title">Respiradores de Media cara</h5>
                                     </div>
                                 </div>
                             </div>
@@ -494,11 +513,10 @@
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
                                         <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/our-work/steelplant/pic7.jpg" alt=""></a>
+                                                src="/theme/images/new/catalog/catalogo03.png" alt=""></a>
                                     </div>
                                     <div class="dlab-info">
-                                        <h5 class="dlab-title"><a href="/theme/portfolio-details.html">Oil and Gas</a>
-                                        </h5>
+                                        <h5 class="dlab-title">Rodilleras</h5>
                                     </div>
                                 </div>
                             </div>
@@ -677,7 +695,7 @@
         </div>
         <!-- Testimonials End -->
         <!-- Latest Blog -->
-        <div class="section-full content-inner bg-white">
+        {{-- <div class="section-full content-inner bg-white">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title text-capitalize">latest blog</h2>
@@ -778,10 +796,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Latest Blog End -->
         <!-- Client logo -->
-        <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+        {{-- <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title text-capitalize">We work with our partners to provide project perfection,<br><span
@@ -839,7 +857,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Client logo End -->
     </div>
     <!-- contact area END -->

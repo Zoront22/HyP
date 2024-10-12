@@ -15,10 +15,11 @@
                                         <span class="icon-sm text-primary"><i class="ti-location-pin"></i></span>
                                         Company Address
                                     </h5>
-                                    <p>007 Dummy Ashoka Apartment, Gautam Marg, Rani Sati Nagar,Jaipur / India </p>
+                                    <p>Blvd. Fundadores 3751 Bodega 5 Col. Valle de las Flores C.P. 25150 / Saltillo
+                                        Coahuila / Mexico</p>
                                     <h6 class="m-b15 font-weight-400"><i class="ti-alarm-clock"></i> Office Hours</h6>
-                                    <p class="m-b0">Mon To Sat - 10.00 - 07.00</p>
-                                    <p>Sunday - Close</p>
+                                    <p class="m-b0">Lun a Vier - 9:00 a. m. - 6:00 p. m.</p>
+                                    <p>Sab - Dom - Close</p>
                                 </div>
                             </div>
                         </div>
@@ -29,12 +30,14 @@
                                         <span class="icon-sm text-primary"><i class="ti-email"></i></span>
                                         E-mail
                                     </h5>
+                                    <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">HYP Solutuion
+                                            Facilitators
+                                        </a></p>
+                                    <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">Ing. Heber
+                                            Gaona
+                                        </a></p>
                                     <p class="m-b0"><a href="mailto:someone@example.com"
-                                            class="text-white">info@example.com</a></p>
-                                    <p class="m-b0"><a href="mailto:someone@example.com"
-                                            class="text-white">hr@example.com</a></p>
-                                    <p class="m-b0"><a href="mailto:someone@example.com"
-                                            class="text-white">support@example.com</a></p>
+                                            class="text-white">heber.gaona@hypsolution.com.mx</a></p>
                                 </div>
                             </div>
                         </div>
@@ -45,8 +48,8 @@
                                         <span class="icon-sm text-primary"><i class="ti-mobile"></i></span>
                                         Phone Numbers
                                     </h5>
-                                    <p class="m-b0"><a href="tel:+4733378901" class="text-white">+00 234 678 9012</a></p>
-                                    <p class="m-b0"><a href="tel:+4733378901" class="text-white">+00 1234 5678 90</a></p>
+                                    <p class="m-b0"><a href="tel:+4733378901" class="text-white">Tel. 8446797552</a></p>
+                                    {{-- <p class="m-b0"><a href="tel:+4733378901" class="text-white">+00 1234 5678 90</a></p> --}}
                                 </div>
                             </div>
                         </div>
