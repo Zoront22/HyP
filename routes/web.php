@@ -39,6 +39,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/images', [ImageController::class, 'index'])->name('images.index');
     Route::post('/images/upload', [ImageController::class, 'upload'])->name('images.upload');
     Route::post('/images/update/{filename}', [ImageController::class, 'update'])->name('images.update');
+    Route::delete('/images/{filename}', [App\Http\Controllers\ImageController::class, 'delete'])->name('images.destroy');
 });
 
 
