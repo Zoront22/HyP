@@ -27,12 +27,15 @@ Route::get('/contact', function () {
     return view('front.contact-1');
 });
 
+Route::post('/send', [HyPMail::class, 'sendEmail'])->name('send.email');
+
+// Route::get('/enviado', function () {
+//     Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
+
+//     return 'enviado!!';
+// });
+
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/enviado', function () {
-    Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
-
-    return 'enviado!!';
-});

@@ -2,9 +2,11 @@
 
 namespace App\Mail;
 
+use Illuminate\Http\Request;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -51,5 +53,36 @@ class HyPMail extends Mailable
     public function attachments(): array
     {
         return [];
+    }
+
+    //Nueva funcion para enviar los datos del formulario
+    public function sendEmail(Request $request) {
+        //Datos del formulario
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required|email',
+            'file' => 'file',
+            'msg' => 'required',
+        ]);
+
+        $data = [
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'file' => $request->file,
+            'msg' => $request->msg,
+        ];
+
+        Mail::send('emails.contact', $data, function($message) use ($request) {
+            $message->to('osvaldote3@gmail.com') // Reemplaza con el destinatario del correo
+                    ->subject('Nuevo Mensaje de Contacto');
+        });
+
+        return back()->with('success', 'Correo enviado con éxito.');
+
+    //     Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
+
+    // return 'enviado!!';
     }
 }

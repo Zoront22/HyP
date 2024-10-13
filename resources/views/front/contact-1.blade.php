@@ -46,7 +46,7 @@
                                 <div class="icon-content">
                                     <h5 class="dlab-tilte">
                                         <span class="icon-sm text-primary"><i class="ti-mobile"></i></span>
-                                        Numero Telefonico
+                                        Numero Telefónico
                                     </h5>
                                     <p class="m-b0"><a href="tel:+4733378901" class="text-white">Tel. 8446797552</a></p>
                                     {{-- <p class="m-b0"><a href="tel:+4733378901" class="text-white">+00 1234 5678 90</a></p> --}}
@@ -56,18 +56,20 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 m-b30">
-                    <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
-                        <h3 class="title-box font-weight-300 m-t0 m-b10">Let's Convert Your Idea into Reality <span
+                    <form action="{{ route('send.email') }}" method="POST" enctype="multipart/form-data"
+                        class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
+                        @csrf
+                        <h3 class="title-box font-weight-300 m-t0 m-b10">Convirtamos tu idea en realidad <span
                                 class="bg-primary"></span></h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the</p>
+                        <p>¡Contáctanos hoy mismo por email y trabajemos juntos en proyectos que generen un impacto positivo
+                            y sostenible!</p>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-user text-primary"></i></span>
-                                        <input name="dzName" type="text" required class="form-control"
-                                            placeholder="First Name">
+                                        <input name="name" type="text" required class="form-control"
+                                            placeholder="Nombre">
                                     </div>
                                 </div>
                             </div>
@@ -75,8 +77,8 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-mobile text-primary"></i></span>
-                                        <input name="dzOther[Phone]" type="text" required class="form-control dz-number"
-                                            placeholder="Phone">
+                                        <input name="phone" type="text" required class="form-control dz-number"
+                                            placeholder="Télefono">
                                     </div>
                                 </div>
                             </div>
@@ -84,12 +86,12 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-email text-primary"></i></span>
-                                        <input name="dzEmail" type="email" class="form-control" required
-                                            placeholder="Your Email Id">
+                                        <input name="email" type="email" class="form-control" required
+                                            placeholder="Correo">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6">
+                            {{-- <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
                                     <div class="input-group flex-nowrap">
                                         <span class="input-group-addon"><i class="ti-check-box text-primary"></i></span>
@@ -112,13 +114,13 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-file text-primary"></i></span>
-                                        <input name="dzOther[Subject]" type="file" required class="form-control"
-                                            placeholder="Upload File">
+                                        <input name="file" type="file" class="form-control"
+                                            placeholder="Sube un archivo">
                                     </div>
                                 </div>
                             </div>
@@ -126,14 +128,13 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="ti-agenda text-primary"></i></span>
-                                        <textarea name="dzMessage" rows="4" class="form-control" required
-                                            placeholder="Tell us about your project or idea"></textarea>
+                                        <textarea name="msg" rows="4" class="form-control" required placeholder="Cuentanos tu idea"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <button name="submit" type="submit" value="Submit" class="site-button button-md">
-                                    <span>Get A Free Quote!</span> </button>
+                                    <span>Enviar</span> </button>
                             </div>
                         </div>
                     </form>
