@@ -2,6 +2,7 @@
 
 use App\Mail\HyPMail;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\ImageSliderController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
@@ -41,6 +42,14 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/images/update/{filename}', [ImageController::class, 'update'])->name('images.update');
     Route::delete('/images/{filename}', [App\Http\Controllers\ImageController::class, 'delete'])->name('images.destroy');
 });
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/images/sliders', [ImageSliderController::class, 'index'])->name('images-sliders.index');
+    Route::post('/images/sliders/upload', [ImageSliderController::class, 'upload'])->name('images-sliders.upload');
+    Route::post('/images/sliders/update/{filename}', [ImageSliderController::class, 'update'])->name('images-sliders.update');
+    Route::delete('/images/sliders/{filename}', [App\Http\Controllers\ImageSliderController::class, 'delete'])->name('images-sliders.destroy');
+});
+
 
 
 // Route::get('/enviado', function () {
