@@ -1,6 +1,10 @@
 <?php
 
 use App\Mail\HyPMail;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\ResetPasswordController;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
@@ -29,13 +33,21 @@ Route::get('/contact', function () {
 
 Route::post('/send', [HyPMail::class, 'sendEmail'])->name('send.email');
 
+Auth::routes();
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/images', [ImageController::class, 'index'])->name('images.index');
+    Route::post('/images/upload', [ImageController::class, 'upload'])->name('images.upload');
+    Route::post('/images/update/{filename}', [ImageController::class, 'update'])->name('images.update');
+});
+
+
 // Route::get('/enviado', function () {
 //     Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
 
 //     return 'enviado!!';
 // });
 
-// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
