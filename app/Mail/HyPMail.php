@@ -75,7 +75,7 @@ class HyPMail extends Mailable
         ];
 
         Mail::send('emails.contact', $data, function($message) use ($request) {
-            $message->to('osvaldote3@gmail.com') // Reemplaza con el destinatario del correo
+            $message->to('example@example.com') // Reemplaza con el destinatario del correo
                     ->subject('Nuevo Mensaje de Contacto');
         });
 
