@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Gestor de Textos</h1>
+    <h2>Gestor de Textos</h2>
     @if (session('success'))
         <p>{{ session('success') }}</p>
     @endif
 
-    <a href="{{ route('texts.create') }}">Crear Nuevo Texto</a>
+    <a href="{{ route('texts.create') }}" class="btn btn-primary ">Crear Nuevo Texto</a>
 
-    <table>
+    <table class="table" style="margin: 100px, 100px, 100px, 100px">
         <thead>
             <tr>
                 <th>Título</th>
@@ -20,11 +20,11 @@
                 <tr>
                     <td>{{ $text->title }}</td>
                     <td>
-                        <a href="{{ route('texts.edit', $text) }}">Editar</a>
+                        <a href="{{ route('texts.edit', $text) }}" class="btn btn-warning">Editar</a>
                         <form action="{{ route('texts.destroy', $text) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit">Eliminar</button>
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
                         </form>
                     </td>
                 </tr>

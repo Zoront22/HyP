@@ -6,14 +6,14 @@
     <form action="{{ route('texts.update', $text) }}" method="POST">
         @csrf
         @method('PUT')
-        <label for="title">Título:</label>
-        <input type="text" name="title" value="{{ $text->title }}" required>
+        <label for="title" class="form-label">Título:</label>
+        <input type="text" class="form-control form-control-lg input-group-text" name="title" value="{{ $text->title }}"
+            required>
         <br>
-        <label for="content">Contenido:</label>
-        <textarea name="content" required>{{ $text->content }}</textarea>
+        <label for="content" class="form-label">Contenido:</label>
+        <textarea name="content" class="form-control form-control-lg" required>{{ $text->content }}</textarea>
         <br>
-        <button type="submit">Actualizar</button>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <a href="{{ route('texts.index') }}" class="btn btn-warning">Volver</a>
     </form>
-
-    <a href="{{ route('texts.index') }}">Volver</a>
 @endsection
