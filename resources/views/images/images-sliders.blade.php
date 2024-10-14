@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h2>Gestor de Imágenes</h2>
+        <h2>Gestor de Imágenes / Sliders</h2>
 
         @if (session('success'))
             <div style="color: green;">

@@ -10,7 +10,7 @@ class ImageController extends Controller
 {
     public function index()
     {
-        $images = Image::all();  // Obtener todas las imágenes desde la base de datos
+        $images = Image::all();
         return view('images.images', compact('images'));
     }
 
@@ -18,21 +18,19 @@ class ImageController extends Controller
     {
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
-            // 'location' => 'required|string|max:255', // Ubicación de la imagen
+            // 'location' => 'required|string|max:255',
         ]);
 
-        //Obtener el nombre original de la imagen subida
+
         $originalFileName = $request->file('image')->getClientOriginalName();
 
-        // Subir la imagen
         $location = 'images';
         $path = $request->file('image')->storeAs("public/theme/{$location}/$originalFileName");
 
-        // Guardar la información en la base de datos
         $image = new Image();
-        $image->filename = $originalFileName; // Nombre original
-        $image->location = $location;  // Ubicación proporcionada por el usuario
-        $image->path = $path;  // Ruta completa en el sistema de archivos
+        $image->filename = $originalFileName;
+        $image->location = $location;
+        $image->path = $path;
         $image->save();
 
         return back()->with('success', 'Imagen subida exitosamente.');
@@ -42,22 +40,18 @@ class ImageController extends Controller
     {
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
-            'location' => 'required|string|max:255', // Ubicación de la imagen
+            // 'location' => 'required|string|max:255',
         ]);
 
         $image = Image::findOrFail($id);
 
-        // Eliminar la imagen antigua
         Storage::delete($image->path);
 
-        //Obtener el nombre original de la imagen subida
         $originalFileName = $request->file('image')->getClientOriginalName();
 
-        // Subir la nueva imagen
         $location = 'images';
         $path = $request->file('image')->storeAs("public/theme/{$location}/$originalFileName");
 
-        // Actualizar la información en la base de datos
         $image->filename = $originalFileName;
         $image->location = $location;
         $image->path = $path;
@@ -70,10 +64,8 @@ class ImageController extends Controller
     {
         $image = Image::findOrFail($id);
 
-        // Eliminar el archivo del almacenamiento
         Storage::delete($image->path);
 
-        // Eliminar el registro de la base de datos
         $image->delete();
 
         return back()->with('success', 'Imagen eliminada exitosamente.');

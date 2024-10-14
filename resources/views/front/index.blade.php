@@ -18,13 +18,17 @@
                                 data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                                 data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="" alt=""
-                                    data-lazyload="{{ asset('storage/theme/images/background1.png') }}"
-                                    data-bgposition="center center" data-kenburns="on" data-duration="4000"
-                                    data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100"
-                                    data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
-                                    data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg"
-                                    data-no-retina>
+                                @foreach ($images as $image)
+                                    @if ($image->id === 5)
+                                        <img src=""
+                                            data-lazyload="{{ asset('storage/' . str_replace('public/', '', $image->path)) }}"
+                                            alt="{{ $image->filename }}" data-bgposition="center center" data-kenburns="on"
+                                            data-duration="4000" data-ease="Power3.easeInOut" data-scalestart="150"
+                                            data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                            data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4"
+                                            class="rev-slidebg" data-no-retina>
+                                    @endif
+                                @endforeach
                                 <!-- LAYER NR. 1 -->
                                 <!-- LAYERS -->
                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer"
@@ -36,7 +40,7 @@
                                     data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)">
+                                    style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url()">
                                 </div>
                                 <!-- LAYER NR. 1 -->
 
@@ -119,13 +123,18 @@
                                 data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="" alt=""
-                                    data-lazyload="{{ asset('storage/theme/images/background2.png') }}"
-                                    data-bgposition="center center" data-kenburns="on" data-duration="4000"
-                                    data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100"
-                                    data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
-                                    data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg"
-                                    data-no-retina>
+                                @foreach ($images as $image)
+                                    @if ($image->id === 6)
+                                        <img src=""
+                                            data-lazyload="{{ asset('storage/' . str_replace('public/', '', $image->path)) }}"
+                                            alt="{{ $image->filename }}" data-bgposition="center center"
+                                            data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut"
+                                            data-scalestart="150" data-scaleend="100" data-rotatestart="0"
+                                            data-rotateend="0" data-blurstart="0" data-blurend="0"
+                                            data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4"
+                                            class="rev-slidebg" data-no-retina>
+                                    @endif
+                                @endforeach
                                 <!-- LAYER NR. 1 -->
                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer"
                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -288,7 +297,8 @@
                                             mecánicas e hidráulicas.</h4>
                                         <p>Ofrecemos servicios especializados en Corte Láser, Reparaciones Mecánicas e
                                             Hidráulicas, garantizando precisión y eficiencia en cada proyecto. Nuestro
-                                            equipo está comprometido en brindar soluciones personalizadas para satisfacer
+                                            equipo está comprometido en brindar soluciones personalizadas para
+                                            satisfacer
                                             las necesidades técnicas de nuestros clientes, utilizando tecnología de
                                             vanguardia y experiencia comprobada en la industria.
                                         </p>
@@ -296,16 +306,24 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="{{ asset('storage/theme/sliders/srv-mecanica.png') }}" class="radius-sm"
-                                        alt="">
+                                    @foreach ($sliders as $slider)
+                                        @if ($slider->id === 11)
+                                            <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                class="radius-sm" alt="{{ $slider->filename }}">
+                                        @endif
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="{{ asset('storage/theme/sliders/srv-paileria.png') }}" class="radius-sm"
-                                        alt="">
+                                    @foreach ($sliders as $slider)
+                                        @if ($slider->id === 13)
+                                            <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                class="radius-sm" alt="{{ $slider->filename }}">
+                                        @endif
+                                    @endforeach
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story content-bx1">
@@ -314,10 +332,13 @@
                                                 faciliators</span></h2>
                                         <h4 class="title">Fabricación, reparación e instalación de
                                             Racks.</h4>
-                                        <p>Ofrecemos servicios de fabricación, reparación e instalación de Racks, así como
+                                        <p>Ofrecemos servicios de fabricación, reparación e instalación de Racks, así
+                                            como
                                             cualquier tipo de trabajo de pailería. Nos especializamos en estructuras
-                                            metálicas de alta calidad, garantizando durabilidad y un acabado profesional.
-                                            Nuestro equipo está dedicado a ofrecer soluciones personalizadas y eficaces para
+                                            metálicas de alta calidad, garantizando durabilidad y un acabado
+                                            profesional.
+                                            Nuestro equipo está dedicado a ofrecer soluciones personalizadas y eficaces
+                                            para
                                             cumplir con los más altos estándares en cada proyecto.
                                         </p>
                                         {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
@@ -335,26 +356,37 @@
                                                 faciliators</span></h2>
                                         <h4 class="title">Trabajos de Soldadura, trabajos de alta especialidad.
                                         </h4>
-                                        <p>Ofrecemos servicios industriales de soldadura y trabajos de alta especialidad,
-                                            enfocados en proyectos que requieren precisión y experiencia técnica. Contamos
+                                        <p>Ofrecemos servicios industriales de soldadura y trabajos de alta
+                                            especialidad,
+                                            enfocados en proyectos que requieren precisión y experiencia técnica.
+                                            Contamos
                                             con un equipo altamente capacitado y herramientas de última generación para
-                                            garantizar soluciones robustas y eficientes en entornos industriales, cumpliendo
+                                            garantizar soluciones robustas y eficientes en entornos industriales,
+                                            cumpliendo
                                             con los estándares más exigentes de calidad y seguridad.
                                         </p>
                                         {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="{{ asset('storage/theme/sliders/srv-industriales.png') }}" class="radius-sm"
-                                        alt="">
+                                    @foreach ($sliders as $slider)
+                                        @if ($slider->id === 10)
+                                            <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                class="radius-sm" alt="{{ $slider->filename }}">
+                                        @endif
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="{{ asset('storage/theme/sliders/srv-mecanicos.png') }}" class="radius-sm"
-                                        alt="">
+                                    @foreach ($sliders as $slider)
+                                        @if ($slider->id === 12)
+                                            <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                class="radius-sm" alt="{{ $slider->filename }}">
+                                        @endif
+                                    @endforeach
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
                                     <div class="our-story content-bx1">
@@ -363,11 +395,14 @@
                                                 class="text-primary">solutions
                                                 faciliators</span></h2>
                                         <h4 class="title">Servicios en el area de electromecanica</h4>
-                                        <p>Ofrecemos servicios mecánicos industriales especializados, brindando soluciones
-                                            eficientes para mantenimiento, reparación y optimización de maquinaria. Nuestro
+                                        <p>Ofrecemos servicios mecánicos industriales especializados, brindando
+                                            soluciones
+                                            eficientes para mantenimiento, reparación y optimización de maquinaria.
+                                            Nuestro
                                             equipo altamente capacitado utiliza tecnología avanzada para asegurar la
                                             fiabilidad y el rendimiento de los equipos en entornos industriales,
-                                            garantizando un servicio de calidad y adaptado a las necesidades específicas de
+                                            garantizando un servicio de calidad y adaptado a las necesidades específicas
+                                            de
                                             cada cliente.
                                         </p>
                                         {{-- <a href="/theme/about-2.html" class="site-button btnhover16">Read More</a> --}}
@@ -457,17 +492,24 @@
         </div> --}}
         <!-- Services End -->
         <!-- Latest Projects -->
-        <div class="section-full content-inner-2 bg-img-fix overlay-black-dark wow fadeIn" data-wow-duration="2s"
-            data-wow-delay="0.8s" style="background-image: url({{ asset('storage/theme/images/background3.png') }});">
+        @foreach ($images as $image)
+            @if ($image->id === 7)
+                <div class="section-full content-inner-2 bg-img-fix overlay-black-dark wow fadeIn" data-wow-duration="2s"
+                    id="catalogo" data-wow-delay="0.8s"
+                    style="background-image: url({{ asset('storage/' . str_replace('public/', '', $image->path)) }});"
+                    @endif
+            @endforeach>
             <div class="container">
                 <div class="section-head text-white text-center">
-                    <h2 class="title" id="catalogo">Catálogo</h2>
-                    <p>Descubre nuestro extenso catálogo de productos diseñados para garantizar la seguridad y eficiencia en
+                    <h2 class="title">Catálogo</h2>
+                    <p>Descubre nuestro extenso catálogo de productos diseñados para garantizar la seguridad y
+                        eficiencia en
                         cualquier entorno de trabajo.
                         Nuestro compromiso es proporcionar productos de la más alta calidad que cumplan
                         con los estándares internacionales de seguridad y rendimiento.</p><br>
                     <h5>Revisa nuestro catalogo completo <a
-                            href="/theme/archives/Guía-rápida-ECO-JYRSA-2024-Oficial-1.1.pdf" target="_blank">dando click
+                            href="/theme/archives/Guía-rápida-ECO-JYRSA-2024-Oficial-1.1.pdf" class="text-danger"
+                            target="_blank">dando click
                             aqui.</a></h5>
                 </div>
                 <div class="row">
@@ -477,8 +519,14 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1  dlab-img-effect zoom">
-                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo0.png') }}"
-                                                alt=""></a>
+                                        <a href="">
+                                            @foreach ($sliders as $slider)
+                                                @if ($slider->id === 14)
+                                                    <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                        class="radius-sm" alt="{{ $slider->filename }}">
+                                                @endif
+                                            @endforeach
+                                        </a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Chalecos</h5>
@@ -488,8 +536,14 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1  dlab-img-effect zoom">
-                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo01.png') }}"
-                                                alt=""></a>
+                                        <a href="">
+                                            @foreach ($sliders as $slider)
+                                                @if ($slider->id === 15)
+                                                    <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                        class="radius-sm" alt="{{ $slider->filename }}">
+                                                @endif
+                                            @endforeach
+                                        </a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Soportes de Espalda</h5>
@@ -499,8 +553,14 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
-                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo02.png') }}"
-                                                alt=""></a>
+                                        <a href="">
+                                            @foreach ($sliders as $slider)
+                                                @if ($slider->id === 16)
+                                                    <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                        class="radius-sm" alt="{{ $slider->filename }}">
+                                                @endif
+                                            @endforeach
+                                        </a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Respiradores de Media cara</h5>
@@ -510,8 +570,14 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
-                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo03.png') }}"
-                                                alt=""></a>
+                                        <a href="">
+                                            @foreach ($sliders as $slider)
+                                                @if ($slider->id === 17)
+                                                    <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                                        class="radius-sm" alt="{{ $slider->filename }}">
+                                                @endif
+                                            @endforeach
+                                        </a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Rodilleras</h5>
@@ -522,26 +588,61 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Latest Projects End -->
-        <!-- Team -->
-        <div class="section-full bg-white content-inner">
-            <div class="container">
-                <div class="section-head text-black text-center">
-                    <h2 class="title text-capitalize">Unete a nuestro equipo</h2>
-                    <p>𝗛&𝗣 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗙𝗮𝗰𝗶𝗹𝗶𝘁𝗮𝘁𝗼𝗿𝘀 busca personal.
-                        ¡Únete a nuestro equipo de 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿𝗲𝘀 𝘆 𝗦𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗼𝗿𝗲𝘀 𝗱𝗲 𝗖𝗮𝗹𝗶𝗱𝗮𝗱 y
-                        marca la diferencia en la excelencia! Si buscas un desafío emocionante y una oportunidad para
-                        𝗰𝗿𝗲𝗰𝗲𝗿 𝗽𝗿𝗼𝗳𝗲𝘀𝗶𝗼𝗻𝗮𝗹𝗺𝗲𝗻𝘁𝗲, ¡𝗲𝘀𝘁𝗼 𝗲𝘀 𝗽𝗮𝗿𝗮 𝘁𝗶! </p>
+    </div>
+    <!-- Latest Projects End -->
+    <!-- Team -->
+    <div class="section-full bg-white content-inner">
+        <div class="container">
+            <div class="section-head text-black text-center">
+                <h2 class="title text-capitalize">Unete a nuestro equipo</h2>
+                <p>𝗛&𝗣 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗙𝗮𝗰𝗶𝗹𝗶𝘁𝗮𝘁𝗼𝗿𝘀 busca personal.
+                    ¡Únete a nuestro equipo de 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿𝗲𝘀 𝘆 𝗦𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗼𝗿𝗲𝘀 𝗱𝗲
+                    𝗖𝗮𝗹𝗶𝗱𝗮𝗱 y
+                    marca la diferencia en la excelencia! Si buscas un desafío emocionante y una oportunidad para
+                    𝗰𝗿𝗲𝗰𝗲𝗿 𝗽𝗿𝗼𝗳𝗲𝘀𝗶𝗼𝗻𝗮𝗹𝗺𝗲𝗻𝘁𝗲, ¡𝗲𝘀𝘁𝗼 𝗲𝘀 𝗽𝗮𝗿𝗮 𝘁𝗶! </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="dlab-box m-b30 dlab-team9">
+                        <div class="dlab-media dlab-media-right">
+                            <a href="">
+                                @foreach ($sliders as $slider)
+                                    @if ($slider->id === 9)
+                                        <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                            class="radius-sm" alt="{{ $slider->filename }}">
+                                    @endif
+                                @endforeach
+                            </a>
+                            {{-- <div class="dlab-info-has">
+                                    <ul class="dlab-social-icon">
+                                        <li><a class="site-button fab fa-facebook-f"
+                                                href="/theme/javascript:void(0);"></a></li>
+                                        <li><a class="site-button fab fa-twitter" href="/theme/javascript:void(0);"></a>
+                                        </li>
+                                        <li><a class="site-button fab fa-linkedin-in"
+                                                href="/theme/javascript:void(0);"></a></li>
+                                        <li><a class="site-button fab fa-pinterest-p"
+                                                href="/theme/javascript:void(0);"></a></li>
+                                    </ul>
+                                </div> --}}
+                            <div class="clearfix">
+                                <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                        <div class="dlab-box m-b30 dlab-team9">
-                            <div class="dlab-media dlab-media-right">
-                                <a href="">
-                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-08.png') }}">
-                                </a>
-                                {{-- <div class="dlab-info-has">
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                    <div class="dlab-box m-b30 dlab-team9">
+                        <div class="dlab-media dlab-media-right">
+                            <a href="">
+                                @foreach ($sliders as $slider)
+                                    @if ($slider->id === 5)
+                                        <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                            class="radius-sm" alt="{{ $slider->filename }}">
+                                    @endif
+                                @endforeach
+                            </a>
+                            {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -553,19 +654,24 @@
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
                                 </div> --}}
-                                <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
-                                </div>
+                            <div class="clearfix">
+                                <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-                        <div class="dlab-box m-b30 dlab-team9">
-                            <div class="dlab-media dlab-media-right">
-                                <a href="">
-                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-04.png') }}">
-                                </a>
-                                {{-- <div class="dlab-info-has">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                    <div class="dlab-box m-b30 dlab-team9">
+                        <div class="dlab-media dlab-media-right">
+                            <a href="">
+                                @foreach ($sliders as $slider)
+                                    @if ($slider->id === 7)
+                                        <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                            class="radius-sm" alt="{{ $slider->filename }}">
+                                    @endif
+                                @endforeach
+                            </a>
+                            {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -577,19 +683,24 @@
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
                                 </div> --}}
-                                <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
-                                </div>
+                            <div class="clearfix">
+                                <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-                        <div class="dlab-box m-b30 dlab-team9">
-                            <div class="dlab-media dlab-media-right">
-                                <a href="">
-                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-06.png') }}">
-                                </a>
-                                {{-- <div class="dlab-info-has">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+                    <div class="dlab-box m-b30 dlab-team9">
+                        <div class="dlab-media dlab-media-right">
+                            <a href="">
+                                @foreach ($sliders as $slider)
+                                    @if ($slider->id === 8)
+                                        <img src="{{ asset('storage/' . str_replace('public/', '', $slider->path)) }}"
+                                            class="radius-sm" alt="{{ $slider->filename }}">
+                                    @endif
+                                @endforeach
+                            </a>
+                            {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
                                         <li><a class="site-button fab fa-facebook-f"
                                                 href="/theme/javascript:void(0);"></a></li>
@@ -601,102 +712,80 @@
                                                 href="/theme/javascript:void(0);"></a></li>
                                     </ul>
                                 </div> --}}
-                                <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-                        <div class="dlab-box m-b30 dlab-team9">
-                            <div class="dlab-media dlab-media-right">
-                                <a href="">
-                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-07.png') }}">
-                                </a>
-                                {{-- <div class="dlab-info-has">
-                                    <ul class="dlab-social-icon">
-                                        <li><a class="site-button fab fa-facebook-f"
-                                                href="/theme/javascript:void(0);"></a></li>
-                                        <li><a class="site-button fab fa-twitter" href="/theme/javascript:void(0);"></a>
-                                        </li>
-                                        <li><a class="site-button fab fa-linkedin-in"
-                                                href="/theme/javascript:void(0);"></a></li>
-                                        <li><a class="site-button fab fa-pinterest-p"
-                                                href="/theme/javascript:void(0);"></a></li>
-                                    </ul>
-                                </div> --}}
-                                <div class="clearfix">
-                                    <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
-                                </div>
+                            <div class="clearfix">
+                                <h4 class="dlab-title"><a href="">H&P Solution Facilitators</a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team END -->
-        <!-- Testimonials -->
-        <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-            <div class="container">
-                <div class="section-head text-black text-center">
-                    <h2 class="title">Comentarios</h2>
-                    <p>"En H&P, estamos comprometidos con la integración de políticas de sustentabilidad social, ecológica y
-                        económica, creando un impacto positivo en tres dimensiones clave para la comunidad. Juntos avanzamos
-                        hacia un futuro más sostenible."</p>
+    </div>
+    <!-- Team END -->
+    <!-- Testimonials -->
+    <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+        <div class="container">
+            <div class="section-head text-black text-center">
+                <h2 class="title">Comentarios</h2>
+                <p>"En H&P, estamos comprometidos con la integración de políticas de sustentabilidad social,
+                    ecológica y
+                    económica, creando un impacto positivo en tres dimensiones clave para la comunidad. Juntos
+                    avanzamos
+                    hacia un futuro más sostenible."</p>
+            </div>
+            <div
+                class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none">
+                <div class="item">
+                    <div class="testimonial-11 testimonial-box">
+                        <div class="testimonial-pic">
+                            <img src="/theme/images/our-team/pic3.jpg" alt="">
+                        </div>
+                        <div class="testimonial-detail quote-left quote-right">
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                    printer took a galley of type and scrambled it to make.</p>
+                            </div>
+                            <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
+                                class="testimonial-position">Student</span>
+                        </div>
+                    </div>
                 </div>
-                <div
-                    class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none">
-                    <div class="item">
-                        <div class="testimonial-11 testimonial-box">
-                            <div class="testimonial-pic">
-                                <img src="/theme/images/our-team/pic3.jpg" alt="">
+                <div class="item">
+                    <div class="testimonial-11 testimonial-box">
+                        <div class="testimonial-pic">
+                            <img src="/theme/images/our-team/pic2.jpg" alt="">
+                        </div>
+                        <div class="testimonial-detail quote-left quote-right">
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                    printer took a galley of type and scrambled it to make.</p>
                             </div>
-                            <div class="testimonial-detail quote-left quote-right">
-                                <div class="testimonial-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
-                                        printer took a galley of type and scrambled it to make.</p>
-                                </div>
-                                <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
-                                    class="testimonial-position">Student</span>
-                            </div>
+                            <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
+                                class="testimonial-position">Student</span>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testimonial-11 testimonial-box">
-                            <div class="testimonial-pic">
-                                <img src="/theme/images/our-team/pic2.jpg" alt="">
-                            </div>
-                            <div class="testimonial-detail quote-left quote-right">
-                                <div class="testimonial-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
-                                        printer took a galley of type and scrambled it to make.</p>
-                                </div>
-                                <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
-                                    class="testimonial-position">Student</span>
-                            </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-11 testimonial-box">
+                        <div class="testimonial-pic">
+                            <img src="/theme/images/our-team/pic1.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-11 testimonial-box">
-                            <div class="testimonial-pic">
-                                <img src="/theme/images/our-team/pic1.jpg" alt="">
+                        <div class="testimonial-detail quote-left quote-right">
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                    printer took a galley of type and scrambled it to make.</p>
                             </div>
-                            <div class="testimonial-detail quote-left quote-right">
-                                <div class="testimonial-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
-                                        printer took a galley of type and scrambled it to make.</p>
-                                </div>
-                                <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
-                                    class="testimonial-position">Student</span>
-                            </div>
+                            <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
+                                class="testimonial-position">Student</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonials End -->
-        <!-- Latest Blog -->
-        {{-- <div class="section-full content-inner bg-white">
+    </div>
+    <!-- Testimonials End -->
+    <!-- Latest Blog -->
+    {{-- <div class="section-full content-inner bg-white">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title text-capitalize">latest blog</h2>
@@ -798,9 +887,9 @@
                 </div>
             </div>
         </div> --}}
-        <!-- Latest Blog End -->
-        <!-- Client logo -->
-        {{-- <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+    <!-- Latest Blog End -->
+    <!-- Client logo -->
+    {{-- <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
             <div class="container">
                 <div class="section-head text-black text-center">
                     <h2 class="title text-capitalize">We work with our partners to provide project perfection,<br><span
@@ -859,7 +948,7 @@
                 </div>
             </div>
         </div> --}}
-        <!-- Client logo End -->
+    <!-- Client logo End -->
     </div>
     <!-- contact area END -->
 @endsection

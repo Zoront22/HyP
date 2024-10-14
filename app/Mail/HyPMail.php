@@ -55,7 +55,6 @@ class HyPMail extends Mailable
         return [];
     }
 
-    //Nueva funcion para enviar los datos del formulario
     public function sendEmail(Request $request) {
         //Datos del formulario
         $request->validate([
@@ -75,13 +74,13 @@ class HyPMail extends Mailable
         ];
 
         Mail::send('emails.contact', $data, function($message) use ($request) {
-            $message->to('example@example.com') // Reemplaza con el destinatario del correo
+            $message->to('example@example.com') // Destinatario
                     ->subject('Nuevo Mensaje de Contacto');
         });
 
         return back()->with('success', 'Correo enviado con éxito.');
 
-    //     Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
+    //     Mail::to('mail@example.com')->send(new HyPMail());
 
     // return 'enviado!!';
     }

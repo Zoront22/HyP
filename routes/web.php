@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Mail\HyPMail;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImageSliderController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
@@ -20,17 +23,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('front.index');
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/about', function () {
-    return view('front.about');
-});
+Route::get('/about', [AboutController::class, 'index']);
 
-Route::get('/contact', function () {
-    return view('front.contact-1');
-});
+Route::get('/contact', [ContactController::class, 'index']);
 
 Route::post('/send', [HyPMail::class, 'sendEmail'])->name('send.email');
 
