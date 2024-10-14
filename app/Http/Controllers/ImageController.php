@@ -54,7 +54,7 @@ class ImageController extends Controller
         $originalFileName = $request->file('image')->getClientOriginalName();
 
         // Subir la nueva imagen
-        $location = $request->location;
+        $location = 'images';
         $path = $request->file('image')->storeAs("public/theme/{$location}/$originalFileName");
 
         // Actualizar la información en la base de datos

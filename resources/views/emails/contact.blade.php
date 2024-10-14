@@ -10,7 +10,7 @@
 
 <body>
     <p><strong>Nombre:</strong> {{ $name }}</p>
-    <p><strong>Nombre:</strong> {{ $phone }}</p>
+    <p><strong>Phone:</strong> {{ $phone }}</p>
     <p><strong>Email:</strong> {{ $email }}</p>
     <p><strong>File:</strong> {{ $file }}</p>
     <p><strong>Mensaje:</strong> {{ $msg }}</p>

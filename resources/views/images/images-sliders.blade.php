@@ -2,39 +2,46 @@
 
 @section('content')
     <div class="container">
-        <h2>Gestión de Imágenes/Sliders</h2>
+        <h2>Gestor de Imágenes</h2>
 
-        <!-- Formulario para subir imagen -->
+        @if (session('success'))
+            <div style="color: green;">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <!-- Formulario para subir una nueva imagen -->
         <form action="{{ route('images-sliders.upload') }}" method="POST" enctype="multipart/form-data">
             @csrf
-            <div class="form-group">
-                <label for="image">Subir Imagen</label>
-                <input type="file" name="image" class="form-control">
-            </div>
+            <input type="file" name="image" required class="form-control">
+            {{-- <input type="text" name="location" placeholder="Ubicación" required class="form-control"> --}}
             <button type="submit" class="btn btn-primary">Subir</button>
         </form>
 
-        <!-- Mostrar imágenes subidas -->
-        <h3>Imágenes Subidas</h3>
+        <!--Mostrar Imagenes subidas-->
         <div class="row">
             @foreach ($images as $image)
                 <div class="col-md-3">
-                    <img src="{{ Storage::url($image) }}" class="img-thumbnail" alt="Imagen">
-                    <!--Actualizar imagenes subidas-->
-                    <form action="{{ route('images-sliders.update', basename($image)) }}" method="POST"
-                        enctype="multipart/form-data">
+                    <img src="{{ asset('storage/theme/' . str_replace('public/theme', '', $image->path)) }}"
+                        class="img-thumbnail" alt="{{ $image->filename }}" width="150">
+                    <p>Nombre: {{ $image->filename }}</p>
+                    <p>Ubicación: {{ $image->location }}</p>
+
+                    <!-- Formulario para actualizar la imagen -->
+                    <form action="{{ route('images-sliders.update', $image->id) }}" method="POST"
+                        enctype="multipart/form-data" style="display:inline;">
                         @csrf
                         <div class="form-group mt-2">
-                            <label for="image">Actualizar Imagen</label>
-                            <input type="file" name="image" class="form-control">
+                            <input type="file" name="image" required class="form-control">
+                            {{-- <input type="text" name="location" value="{{ $image->location }}" required class="form-control"> --}}
                         </div>
                         <button type="submit" class="btn btn-warning mt-1">Actualizar</button>
                     </form>
+
                     <!-- Botón de eliminar -->
-                    <form action="{{ route('images-sliders.destroy', basename($image)) }}" method="POST"
-                        style="display:inline;">
+                    <form action="{{ route('images-sliders.destroy', $image->id) }}" method="POST" style="display:inline;">
                         @csrf
-                        @method('DELETE') <!-- Método DELETE -->
+                        @method('DELETE')
                         <button type="submit" class="btn btn-danger mt-1"
                             onclick="return confirm('¿Estás seguro de que deseas eliminar esta imagen?')">Eliminar</button>
                     </form>

@@ -53,7 +53,7 @@ Route::middleware(['auth'])->group(function () {
 
 
 // Route::get('/enviado', function () {
-//     Mail::to('osvaldote3@gmail.com')->send(new HyPMail());
+//     Mail::to('example@example.com')->send(new HyPMail());
 
 //     return 'enviado!!';
 // });
