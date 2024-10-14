@@ -10,7 +10,7 @@ class Image extends Model
     use HasFactory;
 
     // Aquí definimos los campos que se pueden asignar masivamente
-    protected $fillable = ['filename'];
+    protected $fillable = ['filename', 'location', 'path'];
 
     // Puedes agregar relaciones si fuera necesario, por ejemplo, si las imágenes están asociadas a un usuario
     public function user()
