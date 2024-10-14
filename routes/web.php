@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Mail\HyPMail;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImageSliderController;
+use App\Http\Controllers\TextHomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
@@ -47,7 +48,9 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/images/sliders/{filename}', [App\Http\Controllers\ImageSliderController::class, 'delete'])->name('images-sliders.destroy');
 });
 
-
+Route::middleware(['auth'])->group(function () {
+    Route::resource('/texts', TextHomeController::class);
+});
 
 // Route::get('/enviado', function () {
 //     Mail::to('example@example.com')->send(new HyPMail());
