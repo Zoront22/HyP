@@ -3,7 +3,7 @@
 @section('content')
     <!-- inner page banner -->
     <div class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
-        style="background-image:url(/theme/images/new/others/background-05.png);">
+        style="background-image:url({{ asset('storage/theme/images/background-05.png') }});">
         <div class="container">
             <div class="dlab-bnr-inr-entry align-m text-center">
                 <h1 class="text-white">Sobre nosotros</h1>
@@ -23,13 +23,13 @@
     <div class="content-block">
         <!-- About Services info -->
         <div class="section-full content-inner bg-white video-section"
-            style="background-image:url('/theme/images/background/bg-video.png');">
+            style="background-image:url('{{ asset('storage/theme/images/bg-video.png') }}');">
             <div class="container">
                 <div class="section-content">
                     <div class="row d-flex">
                         <div class="col-lg-6 col-md-12 m-b30">
                             <div class="video-bx">
-                                <img src="/theme/images/new/others/portada.png" alt="Signature">
+                                <img src="{{ asset('storage/theme/images/portada.png') }}" alt="Signature">
                                 <div class="video-play-icon">
                                     <a href="https://www.youtube.com/watch?v=Xqa0mpcDI6s"
                                         class="popup-youtube video bg-primary"><i class="fas fa-play"></i></a>
@@ -61,7 +61,7 @@
         <!-- About Services info END -->
         <!-- Counter -->
         <div class="section-full content-inner overlay-black-dark bg-img-fix"
-            style="background-image:url(/theme/images/new/others/background-04.png);">
+            style="background-image:url('{{ asset('storage/theme/images/background-04.png') }}');">
             <div class="container">
                 <div class="section-content text-center text-white">
                     <div class="row">
@@ -122,7 +122,7 @@
                             <div class="dlab-media">
                                 <a href="">
                                     <img width="358" height="460" alt=""
-                                        src="/theme/images/new/others/sprite0.png">
+                                        src="{{ asset('storage/theme/sliders/sprite0.png') }}">
                                 </a>
                             </div>
                             <div class="dlab-info">
@@ -143,7 +143,7 @@
                             <div class="dlab-media">
                                 <a href="">
                                     <img width="358" height="460" alt=""
-                                        src="/theme/images/new/others/sprite01.png">
+                                        src="{{ asset('storage/theme/sliders/sprite01.png') }}">
                                 </a>
                             </div>
                             <div class="dlab-info">
@@ -164,7 +164,7 @@
                             <div class="dlab-media">
                                 <a href="">
                                     <img width="358" height="460" alt=""
-                                        src="/theme/images/new/others/sprite02.png">
+                                        src="{{ asset('storage/theme/sliders/sprite02.png') }}">
                                 </a>
                             </div>
                             <div class="dlab-info">
@@ -185,7 +185,7 @@
                             <div class="dlab-media">
                                 <a href="">
                                     <img width="358" height="460" alt=""
-                                        src="/theme/images/new/others/sprite03.png">
+                                        src="{{ asset('storage/theme/sliders/sprite03.png') }}">
                                 </a>
                             </div>
                             <div class="dlab-info">

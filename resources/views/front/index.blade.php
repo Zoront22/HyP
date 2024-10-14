@@ -18,12 +18,13 @@
                                 data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                                 data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="/theme/images/main-slider/dummy.png" alt=""
-                                    data-lazyload="/theme/images/new/others/background1.png" data-bgposition="center center"
-                                    data-kenburns="on" data-duration="4000" data-ease="Power3.easeInOut"
-                                    data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0"
-                                    data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0"
-                                    data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                                <img src="" alt=""
+                                    data-lazyload="{{ asset('storage/theme/images/background1.png') }}"
+                                    data-bgposition="center center" data-kenburns="on" data-duration="4000"
+                                    data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100"
+                                    data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
+                                    data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg"
+                                    data-no-retina>
                                 <!-- LAYER NR. 1 -->
                                 <!-- LAYERS -->
                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer"
@@ -97,7 +98,7 @@
                                 </a>
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary"
-                                    href="/theme/services-details.html" target="_blank" id="slide-100-layer-6"
+                                    href="{{ url('/contact') }}" target="_blank" id="slide-100-layer-6"
                                     data-x="['center','center','center','center']"
                                     data-hoffset="['-340','-160','70','70']"
                                     data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"
@@ -118,8 +119,8 @@
                                 data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="/theme/images/main-slider/dummy.png" alt=""
-                                    data-lazyload="/theme/images/new/others/background2.png"
+                                <img src="" alt=""
+                                    data-lazyload="{{ asset('storage/theme/images/background2.png') }}"
                                     data-bgposition="center center" data-kenburns="on" data-duration="4000"
                                     data-ease="Power3.easeInOut" data-scalestart="150" data-scaleend="100"
                                     data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
@@ -295,7 +296,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/new/others/srv-mecanica.png" class="radius-sm"
+                                    <img src="{{ asset('storage/theme/sliders/srv-mecanica.png') }}" class="radius-sm"
                                         alt="">
                                 </div>
                             </div>
@@ -303,7 +304,7 @@
                         <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/new/others/srv-paileria.png" class="radius-sm"
+                                    <img src="{{ asset('storage/theme/sliders/srv-paileria.png') }}" class="radius-sm"
                                         alt="">
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
@@ -344,7 +345,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/new/others/srv-industriales.png" class="radius-sm"
+                                    <img src="{{ asset('storage/theme/sliders/srv-industriales.png') }}" class="radius-sm"
                                         alt="">
                                 </div>
                             </div>
@@ -352,7 +353,7 @@
                         <div class="item">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-md-6 m-b30">
-                                    <img src="/theme/images/new/others/srv-mecanicos.png" class="radius-sm"
+                                    <img src="{{ asset('storage/theme/sliders/srv-mecanicos.png') }}" class="radius-sm"
                                         alt="">
                                 </div>
                                 <div class="col-lg-6 col-md-6 m-b30">
@@ -416,7 +417,7 @@
                             <div class="item">
                                 <div class="service-box style1">
                                     <div class="icon-xl m-b20 text-primary radius">
-                                        <a href="/theme/portfolio-details.html" class="icon-cell"><i
+                                        <a href="" class="icon-cell"><i
                                                 class="flaticon-worker"></i></a>
                                     </div>
                                     <h3 class="title">Material Engineering</h3>
@@ -425,7 +426,7 @@
                             <div class="item">
                                 <div class="service-box style1">
                                     <div class="icon-xl m-b20 text-primary radius">
-                                        <a href="/theme/portfolio-details.html" class="icon-cell"><i
+                                        <a href="" class="icon-cell"><i
                                                 class="flaticon-factory"></i></a>
                                     </div>
                                     <h3 class="title">Power and Energy</h3>
@@ -434,7 +435,7 @@
                             <div class="item">
                                 <div class="service-box style1">
                                     <div class="icon-xl m-b20 text-primary radius">
-                                        <a href="/theme/portfolio-details.html" class="icon-cell"><i
+                                        <a href="" class="icon-cell"><i
                                                 class="flaticon-settings"></i></a>
                                     </div>
                                     <h3 class="title">Agricultural Engineering</h3>
@@ -443,7 +444,7 @@
                             <div class="item">
                                 <div class="service-box style1">
                                     <div class="icon-xl m-b20 text-primary radius">
-                                        <a href="/theme/portfolio-details.html" class="icon-cell"><i
+                                        <a href="" class="icon-cell"><i
                                                 class="flaticon-engineer-1"></i></a>
                                     </div>
                                     <h3 class="title">Petroleum Engineering</h3>
@@ -457,7 +458,7 @@
         <!-- Services End -->
         <!-- Latest Projects -->
         <div class="section-full content-inner-2 bg-img-fix overlay-black-dark wow fadeIn" data-wow-duration="2s"
-            data-wow-delay="0.8s" style="background-image: url(/theme/images/new/others/background3.png);">
+            data-wow-delay="0.8s" style="background-image: url({{ asset('storage/theme/images/background3.png') }});">
             <div class="container">
                 <div class="section-head text-white text-center">
                     <h2 class="title" id="catalogo">Catálogo</h2>
@@ -476,8 +477,8 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1  dlab-img-effect zoom">
-                                        <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/new/catalog/catalogo0.png" alt=""></a>
+                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo0.png') }}"
+                                                alt=""></a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Chalecos</h5>
@@ -487,8 +488,8 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1  dlab-img-effect zoom">
-                                        <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/new/catalog/catalogo01.png" alt=""></a>
+                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo01.png') }}"
+                                                alt=""></a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Soportes de Espalda</h5>
@@ -498,8 +499,8 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
-                                        <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/new/catalog/catalogo02.png" alt=""></a>
+                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo02.png') }}"
+                                                alt=""></a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Respiradores de Media cara</h5>
@@ -509,8 +510,8 @@
                             <div class="item">
                                 <div class="dlab-box project-bx">
                                     <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
-                                        <a href="/theme/portfolio-details.html"><img
-                                                src="/theme/images/new/catalog/catalogo03.png" alt=""></a>
+                                        <a href=""><img src="{{ asset('storage/theme/sliders/catalogo03.png') }}"
+                                                alt=""></a>
                                     </div>
                                     <div class="dlab-info">
                                         <h5 class="dlab-title">Rodilleras</h5>
@@ -538,7 +539,7 @@
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
                                 <a href="">
-                                    <img alt="" src="/theme/images/new/others/sprite-08.png">
+                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-08.png') }}">
                                 </a>
                                 {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
@@ -562,7 +563,7 @@
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
                                 <a href="">
-                                    <img alt="" src="/theme/images/new/others/sprite-04.png">
+                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-04.png') }}">
                                 </a>
                                 {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
@@ -586,7 +587,7 @@
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
                                 <a href="">
-                                    <img alt="" src="/theme/images/new/others/sprite-06.png">
+                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-06.png') }}">
                                 </a>
                                 {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">
@@ -610,7 +611,7 @@
                         <div class="dlab-box m-b30 dlab-team9">
                             <div class="dlab-media dlab-media-right">
                                 <a href="">
-                                    <img alt="" src="/theme/images/new/others/sprite-07.png">
+                                    <img alt="" src="{{ asset('storage/theme/sliders/sprite-07.png') }}">
                                 </a>
                                 {{-- <div class="dlab-info-has">
                                     <ul class="dlab-social-icon">

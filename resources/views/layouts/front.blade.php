@@ -54,7 +54,7 @@
                     <div class="container clearfix">
                         <!-- website logo -->
                         <div class="logo-header mostion logo-dark">
-                            <a href="{{ url('/') }}"><img src="/theme/images/new/logo/logo-03.png"
+                            <a href="{{ url('/') }}"><img src="{{ asset('storage/theme/images/logo-03.png') }}"
                                     alt=""></a>
                         </div>
                         <!-- nav toggle button -->
@@ -83,12 +83,12 @@
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                             <div class="logo-header d-md-block d-lg-none">
-                                <a href="{{ url('/') }}"><img src="/theme/images/new/logo/hyp-logo-oscuro.png"
-                                        alt=""></a>
+                                <a href="{{ url('/') }}"><img
+                                        src="{{ 'storage/theme/images/hyp-logo-oscuro.png' }}" alt=""></a>
                             </div>
                             <ul class="nav navbar-nav">
-                                <li class="active has-mega-menu homedemo">
-                                    <a href="{{ url('/') }}">Home</a>
+                                <li class="has-mega-menu ">
+                                    <a href="{{ url('/') }}">Inicio</a>
                                     <!--<ul class="mega-menu">
                                         <li>
                                             <a href="/theme/index-20.html">
@@ -385,8 +385,8 @@
                                         </li>
                                     </ul>
                                 </li>-->
-                                <li>
-                                    <a href="{{ url('/contact') }}">Contact Us</a>
+                                <li class=" has-mega-menu ">
+                                    <a href="{{ url('/contact') }}">Contactanos</a>
                                     {{-- <ul class="sub-menu right">
                                         <li><a href="/theme/contact-1.html">Contact us 1</a></li>
                                         <li><a href="/theme/contact-2.html">Contact us 2</a></li>
@@ -426,7 +426,7 @@
         <!-- Footer -->
         <footer class="site-footer">
             <div class="footer-top"
-                style="background-image:url(/theme/images/background/bg3.png); background-size: cover;">
+                style="background-image:url({{ asset('storage/theme/images/bg3.png') }}); background-size: cover;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-5 col-xl-2 col-lg-2 col-sm-6 footer-col-4">
