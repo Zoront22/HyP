@@ -31,6 +31,12 @@ class TextHomeController extends Controller
         TextHome::create($request->all());
         return redirect()->route('texts.index')->with('success', 'Texto creado exitosamente.');
     }
+
+    public function show(string $id)
+    {
+        //
+    }
+
     // Mostrar el formulario para editar un texto específico
     public function edit($id)
     {

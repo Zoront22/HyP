@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Image;
 use App\Models\ImageSlider;
+use App\Models\TextAbout;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -16,6 +17,8 @@ class AboutController extends Controller
         $ids = [2,3,4,20,];
         $sliders = ImageSlider::whereIn('id', $ids)->get();
 
-        return view('front.about', compact('images', 'sliders'));
+        $texts = TextAbout::all();
+
+        return view('front.about', compact('images', 'sliders', 'texts'));
     }
 }

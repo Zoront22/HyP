@@ -5,6 +5,7 @@ use App\Mail\HyPMail;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImageSliderController;
 use App\Http\Controllers\TextHomeController;
+use App\Http\Controllers\TextAboutController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
@@ -50,6 +51,8 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('/texts', TextHomeController::class);
+
+    Route::resource('/texts/about', TextAboutController::class);
 });
 
 // Route::get('/enviado', function () {

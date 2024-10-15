@@ -14,8 +14,12 @@
             <!-- Breadcrumb row -->
             <div class="breadcrumb-row">
                 <ul class="list-inline">
-                    <li><a href="{{ url('/') }}">Inicio</a></li>
-                    <li>Sobre nosotros</li>
+                    @foreach ($texts as $text)
+                        @if ($text->id === 2)
+                            <li><a href="{{ url('/') }}">{{ $text->title }}</a></li>
+                            <li>{{ $text->subtitle }}</li>
+                        @endif
+                    @endforeach
                 </ul>
             </div>
             <!-- Breadcrumb row END -->
@@ -51,20 +55,28 @@
                     </div>
                     <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
                         <div class="content-bx1">
-                            <h2 class="m-b15 title">¿Quiénes somos?<br><span class="text-primary"> Somos una Empresa con
-                                    liderazgo
-                                    y experiencia.</span></h2>
-                            <p class="m-b30">
-                                Ofrecemos soluciones alternativas
-                                a través de consultoría, así como
-                                suministro de insumos y
-                                materiales.
-                            </p>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 3)
+                                    <h2 class="m-b15 title">{{ $text->title }}<br><span class="text-primary">
+                                            {{ $text->subtitle }} </span></h2>
+                                    <p class="m-b30">
+                                        {{ $text->content }}
+                                    </p>
+                                @endif
+                            @endforeach
                             {{-- <img src="/theme/images/sign.png" width="200" alt=""> --}}
-                            <h4 class="m-b0">Ing. Heber Abdiel Gaona Gallegos</h4>
-                            <span class="font-14">Gerente general</span>
-                            <h4 class="m-b0">Lic. Rodrigo Carranza Luis</h4>
-                            <span class="font-14">Gerente Recursos Humanos</span>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 4)
+                                    <h4 class="m-b0"> {{ $text->title }} </h4>
+                                    <span class="font-14"> {{ $text->subtitle }} </span>
+                                @endif
+                            @endforeach
+                            @foreach ($texts as $text)
+                                @if ($text->id === 5)
+                                    <h4 class="m-b0"> {{ $text->title }} </h4>
+                                    <span class="font-14"> {{ $text->subtitle }} </span>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -85,33 +97,49 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
                     <div class="counter-style-5">
                         <div class="">
-                            <span class="counter">6810</span>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 6)
+                                    <span class="counter"> {{ $text->title }} </span>
                         </div>
-                        <span class="counter-text">Passionate Employee</span>
+                        <span class="counter-text"> {{ $text->subtitle }} </span>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
                     <div class="counter-style-5">
                         <div class="">
-                            <span class="counter">4060</span>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 7)
+                                    <span class="counter"> {{ $text->title }} </span>
                         </div>
-                        <span class="counter-text">Modern Factory</span>
+                        <span class="counter-text"> {{ $text->subtitle }} </span>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
                     <div class="counter-style-5">
                         <div class="">
-                            <span class="counter">3164</span>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 8)
+                                    <span class="counter"> {{ $text->title }} </span>
                         </div>
-                        <span class="counter-text">Factory in Worldwide</span>
+                        <span class="counter-text"> {{ $text->subtitle }} </span>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
                     <div class="counter-style-5">
                         <div class="">
-                            <span class="counter">1852</span>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 9)
+                                    <span class="counter"> {{ $text->title }} </span>
                         </div>
-                        <span class="counter-text">International Awards</span>
+                        <span class="counter-text"> {{ $text->subtitle }} </span>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -123,15 +151,16 @@
     <div class="section-full text-center bg-gray content-inner">
         <div class="container">
             <div class="section-head text-black text-center">
-                <h2 class="title">Visión</h2>
+                @foreach ($texts as $text)
+                    @if ($text->id === 10)
+                <h2 class="title"> {{$text->title}} </h2>
                 <p>
-                    En H&P SOLUTION FACILITATORS hacemos de nuestro cliente una
-                    prioridad, establecemos un compromiso profesional para facilitarles
-                    soluciones a sus actividades cotidianas.
+                    {{$text->content}}
                 </p>
-                <h3>¿Cómo llegaremos ahí?</h3>
-                <p>Tenemos una serie de pasos para cumplir
-                    esta visión</p>
+                <h3> {{{$text->subtitle}}} </h3>
+                <p> {{$text->others}} </p>
+                    @endif
+                @endforeach
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -147,8 +176,12 @@
                             </a>
                         </div>
                         <div class="dlab-info">
-                            <h4 class="dlab-title"><a href="">Atender a nuestros clientes <br>
-                                    con profecionalismo</a></h4>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 11)
+                            <h4 class="dlab-title"><a href=""> {{$text->title}} <br>
+                                    {{$text->subtitle}} </a></h4>
+                                    @endif
+                                @endforeach
                             {{-- <span class="dlab-position">Director</span>
                                 <ul class="dlab-social-icon dez-border">
                                     <li><a class="fab fa-facebook-f" href="/theme/https://www.facebook.com/"></a></li>
@@ -172,8 +205,12 @@
                             </a>
                         </div>
                         <div class="dlab-info">
-                            <h4 class="dlab-title"><a href="">Que los servicios sean
-                                    atendidos <br> a tiempo </a></h4>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 12)
+                            <h4 class="dlab-title"><a href=""> {{$text->title}} <br>
+                                    {{$text->subtitle}} </a></h4>
+                                    @endif
+                                @endforeach
                             {{-- <span class="dlab-position">Designer</span>
                                 <ul class="dlab-social-icon dez-border">
                                     <li><a class="fab fa-facebook-f" href="/theme/javascript:void(0);"></a></li>
@@ -197,8 +234,12 @@
                             </a>
                         </div>
                         <div class="dlab-info">
-                            <h4 class="dlab-title"><a href="">Satisfacer con
-                                    calidad <br> nuestros productos</a></h4>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 13)
+                            <h4 class="dlab-title"><a href=""> {{$text->title}} <br>
+                                    {{$text->subtitle}} </a></h4>
+                                    @endif
+                                @endforeach
                             {{-- <span class="dlab-position">Developer</span>
                                 <ul class="dlab-social-icon dez-border">
                                     <li><a class="fab fa-facebook-f" href="/theme/javascript:void(0);"></a></li>
@@ -222,8 +263,12 @@
                             </a>
                         </div>
                         <div class="dlab-info">
-                            <h4 class="dlab-title"><a href="">Recomendar las
-                                    mejores practicas <br> a sus servicios</a></h4>
+                            @foreach ($texts as $text)
+                                @if ($text->id === 14)
+                            <h4 class="dlab-title"><a href=""> {{$text->title}} <br>
+                                    {{$text->subtitle}} </a></h4>
+                                    @endif
+                                @endforeach
                             {{-- <span class="dlab-position">Manager</span>
                                 <ul class="dlab-social-icon dez-border">
                                     <li><a class="fab fa-facebook-f" href="/theme/javascript:void(0);"></a></li>
@@ -307,10 +352,13 @@
     <div class="section-full content-inner-2 bg-gray">
         <div class="container">
             <div class="section-head text-black text-center">
-                <h2 class="title">Opiniones y Comentarios</h2>
-                <p>Puedes dejar tus opiniones o sugerencias para nuestra empresa <a
-                        href="{{ url('/contact') }}">¡contactanos!</a>
+                @foreach ($texts as $text)
+                    @if ($text->id === 15)
+                <h2 class="title"> {{$text->title}} </h2>
+                <p> {{$text->content}} <a href="{{ url('/contact') }}"> {{$text->others}} </a>
                 </p>
+                @endif
+                @endforeach
             </div>
             <div class="testimonial-six owl-loaded owl-theme owl-carousel owl-none dots-style-2">
                 <div class="item">
