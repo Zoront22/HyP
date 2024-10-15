@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\TextContactController;
 use App\Mail\HyPMail;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImageSliderController;
@@ -53,6 +54,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/texts', TextHomeController::class);
 
     Route::resource('/texts/about', TextAboutController::class);
+
+    Route::resource('/texts/contact', TextContactController::class);
 });
 
 // Route::get('/enviado', function () {

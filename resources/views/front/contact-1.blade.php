@@ -15,44 +15,59 @@
                     <div class="col-lg-12 col-md-12 m-b30">
                         <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
                             <div class="icon-content">
-                                <h5 class="dlab-tilte">
-                                    <span class="icon-sm text-primary"><i class="ti-location-pin"></i></span>
-                                    Horarios y Oficina
-                                </h5>
-                                <p>Blvd. Fundadores 3751 Bodega 5 Col. Valle de las Flores C.P. 25150 / Saltillo
-                                    Coahuila / Mexico</p>
-                                <h6 class="m-b15 font-weight-400"><i class="ti-alarm-clock"></i> Office Hours</h6>
-                                <p class="m-b0">Lun a Vier - 9:00 a. m. - 6:00 p. m.</p>
-                                <p>Sab - Dom - Close</p>
+                                @foreach ($texts as $text)
+                                    @if ($text->id === 2)
+                                        <h5 class="dlab-tilte">
+                                            <span class="icon-sm text-primary"><i class="ti-location-pin"></i></span>
+                                            {{ $text->title }}
+                                        </h5>
+                                        <p> {{ $text->content }} </p>
+                                    @endif
+                                @endforeach
+                                @foreach ($texts as $text)
+                                    @if ($text->id === 3)
+                                        <h6 class="m-b15 font-weight-400"><i class="ti-alarm-clock"></i> {{ $text->title }}
+                                        </h6>
+                                        <p class="m-b0"> {{ $text->content }} </p>
+                                        <p> {{ $text->others }} </p>
+                                    @endif
+                                @endforeach
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-6 m-b30">
                         <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
                             <div class="icon-content">
-                                <h5 class="dlab-tilte">
-                                    <span class="icon-sm text-primary"><i class="ti-email"></i></span>
-                                    Contacto
-                                </h5>
-                                <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">HYP Solutuion
-                                        Facilitators
-                                    </a></p>
-                                <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">Ing. Heber
-                                        Gaona
-                                    </a></p>
-                                <p class="m-b0"><a href="mailto:someone@example.com"
-                                        class="text-white">heber.gaona@hypsolution.com.mx</a></p>
+                                @foreach ($texts as $text)
+                                    @if ($text->id === 4)
+                                        <h5 class="dlab-tilte">
+                                            <span class="icon-sm text-primary"><i class="ti-email"></i></span>
+                                            {{ $text->title }}
+                                        </h5>
+                                        <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">
+                                                {{ $text->subtitle }} </a></p>
+                                        <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">
+                                                {{ $text->content }} </a></p>
+                                        <p class="m-b0"><a href="mailto:someone@example.com" class="text-white">
+                                                {{ $text->others }} </a></p>
+                                    @endif
+                                @endforeach
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-6 m-b30">
                         <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
                             <div class="icon-content">
-                                <h5 class="dlab-tilte">
-                                    <span class="icon-sm text-primary"><i class="ti-mobile"></i></span>
-                                    Numero Telefónico
-                                </h5>
-                                <p class="m-b0"><a href="tel:+4733378901" class="text-white">Tel. 8446797552</a></p>
+                                @foreach ($texts as $text)
+                                    @if ($text->id === 5)
+                                        <h5 class="dlab-tilte">
+                                            <span class="icon-sm text-primary"><i class="ti-mobile"></i></span>
+                                            {{ $text->title }}
+                                        </h5>
+                                        <p class="m-b0"><a href="tel:+4733378901" class="text-white">
+                                                {{ $text->content }} </a></p>
+                                    @endif
+                                @endforeach
                                 {{-- <p class="m-b0"><a href="tel:+4733378901" class="text-white">+00 1234 5678 90</a></p> --}}
                             </div>
                         </div>
@@ -63,10 +78,13 @@
                 <form action="{{ route('send.email') }}" method="POST" enctype="multipart/form-data"
                     class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
                     @csrf
-                    <h3 class="title-box font-weight-300 m-t0 m-b10">Convirtamos tu idea en realidad <span
-                            class="bg-primary"></span></h3>
-                    <p>¡Contáctanos hoy mismo por email y trabajemos juntos en proyectos que generen un impacto positivo
-                        y sostenible!</p>
+                    @foreach ($texts as $text)
+                        @if ($text->id === 1)
+                            <h3 class="title-box font-weight-300 m-t0 m-b10"> {{ $text->title }} <span
+                                    class="bg-primary"></span></h3>
+                            <p> {{ $text->content }} </p>
+                        @endif
+                    @endforeach
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
