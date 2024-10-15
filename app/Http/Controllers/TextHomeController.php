@@ -11,12 +11,12 @@ class TextHomeController extends Controller
     public function index()
     {
         $texts = TextHome::all();
-        return view('texts.index', compact('texts'));
+        return view('texts.home.index', compact('texts'));
     }
     // Mostrar el formulario para crear un nuevo texto
     public function create()
     {
-        return view('texts.create');
+        return view('texts.home.create');
     }
     // Guardar un nuevo texto en la base de datos
     public function store(Request $request)
@@ -35,7 +35,7 @@ class TextHomeController extends Controller
     public function edit($id)
     {
         $text = TextHome::findOrFail($id);
-        return view('texts.edit', compact('text'));
+        return view('texts.home.edit', compact('text'));
     }
     // Actualizar un texto específico en la base de datos
     public function update(Request $request, string $id)
