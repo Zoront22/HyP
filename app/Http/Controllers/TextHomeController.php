@@ -23,7 +23,9 @@ class TextHomeController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:255',
-            'content' => 'required|string',
+            'subtitle' => 'string',
+            'content' => 'required|string|max:1500',
+            'others' => 'string',
         ]);
 
         TextHome::create($request->all());
@@ -40,10 +42,12 @@ class TextHomeController extends Controller
     {
         $request->validate([
             'title' => 'required|string|max:255',
+            'subtitle' => 'string',
             'content' => 'required|string',
+            'others' => 'string',
         ]);
 
-        $text = TextHome::find($id)->update($request->all());
+        $text = TextHome::findOrFail($id)->update($request->all());
         return redirect()->route('texts.index')->with('success', 'Texto actualizado exitosamente.');
     }
     // Eliminar un texto

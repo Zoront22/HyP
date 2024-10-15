@@ -10,7 +10,7 @@ class TextHome extends Model
     use HasFactory;
 
     protected $table = 'texts_home';
-    protected $fillable = ['title', 'content'];
+    protected $fillable = ['title', 'content', 'subtitle', 'others'];
 
     public function user()
     {
