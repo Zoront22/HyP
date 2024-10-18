@@ -13,7 +13,6 @@ class TextAboutController extends Controller
     public function index()
     {
         $texts = TextAbout::all();
-
         return view('texts.about.index', compact('texts'));
     }
 

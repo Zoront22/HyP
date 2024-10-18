@@ -28,7 +28,8 @@
                 <a class="navbar-brand" href="{{ url('/images') }}">Imagenes</a>
                 <a class="navbar-brand" href="{{ url('/images/sliders') }}">Imagenes Sliders</a>
                 <a class="navbar-brand" href="{{ url('/texts') }}">texts</a>
-                <a class="navbar-brand" href="{{ url('/texts/about') }}">texts About</a>
+                <a class="navbar-brand" href="{{ route('about.index') }}">texts About</a>
+                <a class="navbar-brand" href="{{ route('contact.index') }}">texts Contact</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
