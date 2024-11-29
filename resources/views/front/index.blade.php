@@ -826,72 +826,66 @@
     </div>
     <!-- Team END -->
     <!-- Testimonials -->
-    <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-        <div class="container">
-            <div class="section-head text-black text-center">
-                @foreach ($texts as $text)
+    <!--<div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    {{-- @foreach ($texts as $text)
                     @if ($text->id === 20)
                         <h2 class="title">{{ $text->title }}</h2>
-                        <p> {{ $text->content }}
-                            {{-- En H&P, estamos comprometidos con la integración de políticas de sustentabilidad social,
-                    ecológica y
-                    económica, creando un impacto positivo en tres dimensiones clave para la comunidad. Juntos
-                    avanzamos
-                    hacia un futuro más sostenible. --}}
-                        </p>
+                        <p> {{ $text->content }}</p>
                     @endif
-                @endforeach
+                @endforeach --}}
+                </div>
+                <div
+                    class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none">
+                    <div class="item">
+                        <div class="testimonial-11 testimonial-box">
+                            <div class="testimonial-pic">
+                                <img src="/theme/images/our-team/pic3.jpg" alt="">
+                            </div>
+                            <div class="testimonial-detail quote-left quote-right">
+                                <div class="testimonial-text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                        printer took a galley of type and scrambled it to make.</p>
+                                </div>
+                                <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
+                                    class="testimonial-position">Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-11 testimonial-box">
+                            <div class="testimonial-pic">
+                                <img src="/theme/images/our-team/pic2.jpg" alt="">
+                            </div>
+                            <div class="testimonial-detail quote-left quote-right">
+                                <div class="testimonial-text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                        printer took a galley of type and scrambled it to make.</p>
+                                </div>
+                                <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
+                                    class="testimonial-position">Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-11 testimonial-box">
+                            <div class="testimonial-pic">
+                                <img src="/theme/images/our-team/pic1.jpg" alt="">
+                            </div>
+                            <div class="testimonial-detail quote-left quote-right">
+                                <div class="testimonial-text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                        printer took a galley of type and scrambled it to make.</p>
+                                </div>
+                                <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
+                                    class="testimonial-position">Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div
-                class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none">
-                <div class="item">
-                    <div class="testimonial-11 testimonial-box">
-                        <div class="testimonial-pic">
-                            <img src="/theme/images/our-team/pic3.jpg" alt="">
-                        </div>
-                        <div class="testimonial-detail quote-left quote-right">
-                            <div class="testimonial-text">
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
-                                    printer took a galley of type and scrambled it to make.</p>
-                            </div>
-                            <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
-                                class="testimonial-position">Student</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="testimonial-11 testimonial-box">
-                        <div class="testimonial-pic">
-                            <img src="/theme/images/our-team/pic2.jpg" alt="">
-                        </div>
-                        <div class="testimonial-detail quote-left quote-right">
-                            <div class="testimonial-text">
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
-                                    printer took a galley of type and scrambled it to make.</p>
-                            </div>
-                            <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
-                                class="testimonial-position">Student</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="testimonial-11 testimonial-box">
-                        <div class="testimonial-pic">
-                            <img src="/theme/images/our-team/pic1.jpg" alt="">
-                        </div>
-                        <div class="testimonial-detail quote-left quote-right">
-                            <div class="testimonial-text">
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
-                                    printer took a galley of type and scrambled it to make.</p>
-                            </div>
-                            <h5 class="testimonial-name text-primary m-t0 m-b5">David Matin</h5> <span
-                                class="testimonial-position">Student</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </div>-->
     <!-- Testimonials End -->
     <!-- Latest Blog -->
     {{-- <div class="section-full content-inner bg-white">

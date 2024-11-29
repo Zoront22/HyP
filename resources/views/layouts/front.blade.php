@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="keywords"
+        content="H&P, Servicios industriales, Soluciones para la industria, Mantenimiento industrial, Proyectos industriales, Innovación en servicios industriales, Mantenimiento preventivo industrial, Reparación de maquinaria industrial, Servicios de mantenimiento mecánico, Diagnóstico industrial, Mantenimiento eléctrico para fábricas, Sistemas de control industrial, Servicios de manufactura, Ingeniería de procesos industriales, Soldadura y corte industrial, Soluciones sostenibles para la industria, solution facilitators, H&P solution facilitators, Saltillo, Mexico">
+    <meta name="author" content="H&P solution facilitators">
     <meta name="robots" content="">
-    <meta name="description" content="Industry - Factory & Industrial HTML Template">
-    <meta property="og:title" content="Industry - Factory & Industrial HTML Template">
-    <meta property="og:description" content="Industry - Factory & Industrial HTML Template">
+    <meta name="description" content="H&P solution facilitators">
+    <meta property="og:title" content="H&P solution facilitators">
+    <meta property="og:description" content="H&P solution facilitators">
     <meta property="og:image" content="https://industry.dexignzone.com/xhtml/social-image.png">
     <meta name="format-detection" content="telephone=no">
 
@@ -433,7 +434,7 @@
                             <div class="widget widget_services border-0">
                                 <h5 class="footer-title text-white">Compañia</h5>
                                 <ul>
-                                    <li><a href="{{ url('/about') }}">About Us</a></li>
+                                    <li><a href="{{ url('/about') }}">Sobre nosotros</a></li>
                                     {{-- <li><a href="/theme/blog-grid-2.html">Blog</a></li>
                                     <li><a href="/theme/services-1.html">Services</a></li>
                                     <li><a href="/theme/privacy-policy.html">Privacy Policy</a></li>
@@ -509,7 +510,7 @@
             </div>
     </div>
     <!-- footer bottom part -->
-    <div class="footer-bottom">
+    {{-- <div class="footer-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © <span class="current-year">2024</span> <a
@@ -519,13 +520,13 @@
                     <div class="widget-link ">
                         <ul>
                             <li><a href="{{ url('/about') }}"> About</a></li>
-                            {{-- <li><a href="/theme/help-desk.html"> Help Desk</a></li> --}}
+                            <li><a href="/theme/help-desk.html"> Help Desk</a></li>
                             <li><a href="/theme/privacy-policy.html"> Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     </footer>
     <!-- Footer END-->
