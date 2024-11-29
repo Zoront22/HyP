@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords"
-        content="H&P, Servicios industriales, Soluciones para la industria, Mantenimiento industrial, Proyectos industriales, Innovación en servicios industriales, Mantenimiento preventivo industrial, Reparación de maquinaria industrial, Servicios de mantenimiento mecánico, Diagnóstico industrial, Mantenimiento eléctrico para fábricas, Sistemas de control industrial, Servicios de manufactura, Ingeniería de procesos industriales, Soldadura y corte industrial, Soluciones sostenibles para la industria, solution facilitators, H&P solution facilitators, Saltillo, Mexico">
+        content="H&P, Servicios industriales, Proyectos industriales, Reparación de maquinaria industrial, Sistemas de control industrial, Servicios de manufactura, Soldadura y corte industrial, solution facilitators, Saltillo">
     <meta name="author" content="H&P solution facilitators">
     <meta name="robots" content="">
     <meta name="description" content="H&P solution facilitators">
